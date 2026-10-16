@@ -1,0 +1,24 @@
+{
+  "major": {
+    "peaks_detected_pct": 90.0,
+    "false_signal_pct": 51.785714285714285,
+    "precision_pct": 48.214285714285715,
+    "precision_excl_late_pct": 48.214285714285715,
+    "n_peaks": 10,
+    "n_signals": 112,
+    "n_detected": 54,
+    "n_false": 58,
+    "n_late": 0
+  },
+  "lower": {
+    "peaks_detected_pct": 71.42857142857143,
+    "false_signal_pct": 54.464285714285715,
+    "precision_pct": 45.535714285714285,
+    "precision_excl_late_pct": 45.535714285714285,
+    "n_peaks": 14,
+    "n_signals": 112,
+    "n_detected": 51,
+    "n_false": 61,
+    "n_late": 0
+  }
+}

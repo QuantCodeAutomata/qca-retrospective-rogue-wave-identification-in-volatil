@@ -1,0 +1,24 @@
+{
+  "major": {
+    "peaks_detected_pct": 69.23,
+    "false_signal_pct": 42.22,
+    "precision_pct": 57.78,
+    "precision_excl_late_pct": 53.66,
+    "n_peaks": 13,
+    "n_signals": 45,
+    "n_detected": 22,
+    "n_false": 19,
+    "n_late": 4
+  },
+  "lower": {
+    "peaks_detected_pct": 57.14,
+    "false_signal_pct": 35.56,
+    "precision_pct": 64.44,
+    "precision_excl_late_pct": 58.97,
+    "n_peaks": 21,
+    "n_signals": 45,
+    "n_detected": 23,
+    "n_false": 16,
+    "n_late": 6
+  }
+}

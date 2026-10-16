@@ -1,0 +1,26 @@
+{
+  "VIX": {
+    "swh": 6.480671726432084,
+    "n_major": 13,
+    "n_lower": 8,
+    "n_all_peaks": 748,
+    "raw_swh": 5.272254730213439,
+    "n_raw_peaks": 2048
+  },
+  "VXO": {
+    "swh": 6.533091325250534,
+    "n_major": 12,
+    "n_lower": 5,
+    "n_all_peaks": 710,
+    "raw_swh": 5.4603905490239155,
+    "n_raw_peaks": 2201
+  },
+  "VSTOXX": {
+    "swh": 9.325486216782593,
+    "n_major": 10,
+    "n_lower": 4,
+    "n_all_peaks": 561,
+    "raw_swh": 7.912489654360928,
+    "n_raw_peaks": 1731
+  }
+}

@@ -1,0 +1,39 @@
+# VIX configuration for rogue-wave analysis
+index: VIX
+ticker_yahoo: "^VIX"
+sample_start: "1992-01-02"
+sample_end: "2025-04-08"
+
+# Signal processing
+mirroring_convention: "symmetric_reflection_exclude_endpoint"
+filter_percentile_descriptive: 92.5   # used in exp1, exp2 descriptive analysis
+filter_percentile_realtime: 95.0      # used in exp3, exp4 real-time analysis
+
+# Peak detection
+find_peaks_kwargs: {}                 # default scipy.signal.find_peaks settings
+
+# SWH computation
+swh_top_fraction: 0.3333             # top one-third of prominences; count = ceil(n/3)
+
+# Rogue-wave thresholds
+threshold_lower_extreme: 2.0         # prominence > 2 * SWH
+threshold_major_rogue: 2.5           # prominence > 2.5 * SWH
+
+# Schrödinger operator
+window_L: 80                         # trading-day window length
+boundary_condition: "dirichlet"      # zero endpoints
+delta_t: 1                           # uniform trading-day spacing
+
+# Real-time warning indicator
+block_len: 10                        # last-N trading days for gradient block
+threshold_grad_count: 50             # gradient count threshold
+threshold_warning: 300               # W_i > 300 triggers warning
+
+# Evaluation rules
+detection_window_days: 240           # signal must appear within 240 tdays before peak
+min_inter_peak_days: 80              # signal must be > 80 tdays after previous peak
+late_signal_days: 10                 # signal within 10 tdays after peak = late
+
+# Kurtosis/skewness convention
+skewness_bias: false
+kurtosis_fisher: true                # excess kurtosis

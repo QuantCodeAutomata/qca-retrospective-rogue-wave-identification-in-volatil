@@ -1,0 +1,43 @@
+# VXO configuration for rogue-wave analysis
+index: VXO
+ticker_yahoo: "^VXO"
+sample_start: "1987-10-21"
+sample_end: "2020-10-29"
+
+# In-sample / out-of-sample split
+insample_end: "2004-12-31"
+
+# Signal processing
+mirroring_convention: "symmetric_reflection_exclude_endpoint"
+filter_percentile_descriptive: 92.5
+filter_percentile_realtime: 95.0
+
+# Peak detection
+find_peaks_kwargs: {}
+
+# SWH computation
+swh_top_fraction: 0.3333
+swh_count_rule: "ceiling"
+
+# Rogue-wave thresholds
+threshold_lower_extreme: 2.0
+threshold_major_rogue: 2.5
+
+# Schrödinger operator
+window_L: 80
+boundary_condition: "dirichlet"
+delta_t: 1
+
+# Real-time warning indicator
+block_len: 10
+threshold_grad_count: 50
+threshold_warning: 700              # VXO-specific threshold
+
+# Evaluation rules
+detection_window_days: 240
+min_inter_peak_days: 80
+late_signal_days: 10
+
+# Kurtosis/skewness convention
+skewness_bias: false
+kurtosis_fisher: true
