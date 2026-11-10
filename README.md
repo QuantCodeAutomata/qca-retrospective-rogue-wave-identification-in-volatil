@@ -4,6 +4,8 @@ A checked implementation of Hayward, Lennon and Biancalana, *Real-time identific
 
 **Status: partial numerical replication on real VIX, VXO and VSTOXX High data.** With `all_bins`, we detect 9/12 paper VIX events and 7/8 VXO events, matching the published detection counts. Episode precision is 80.0% and 68.75%, versus 84.2% and 63.2% in the paper. The other FFT interpretation gives different results. Exact author settings and data snapshots are unavailable; forecasting performance is not established.
 
+**VSTOXX.** The paper reports 7/8 major events detected and 70.6% episode precision. Our two longer High histories cover different subsets of those eight events. With `all_bins`, DAG (2010–2024) gives 3/4 detected and 60% precision, and Investing (2012–March 2025) gives 3/3 and 50%. With `spectral_peaks`, the same inputs give 3/4 and 100% on DAG, and 2/3 and 60% on Investing. [Results for all 14 VSTOXX scenarios](docs/REPLICATION.md#vstoxx).
+
 [Paper on QCA](https://qca.limex.pro/file/f65a674b-d986-4fa5-a993-7c9e9ed49537--real-time-identification-of-the-onset-of-financial-rogue-waves) · [arXiv v4](https://arxiv.org/abs/2606.31475v4) · [Replication results](docs/REPLICATION.md) · [April 2025 / November 2026](docs/EVENT_STUDY.md) · [Article coverage](docs/ARTICLE_COVERAGE.md)
 
 ## What changed
