@@ -1,0 +1,222 @@
+[
+  {
+    "run_id": "dag_common_all_bins",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "all_bins",
+    "start": "2012-12-28",
+    "end": "2024-11-22",
+    "rows": 3032,
+    "source_sha256_matches": 47,
+    "manifest": "runs/dag_common_all_bins/manifest.json"
+  },
+  {
+    "run_id": "dag_common_spectral_peaks",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "spectral_peaks",
+    "start": "2012-12-28",
+    "end": "2024-11-22",
+    "rows": 3032,
+    "source_sha256_matches": 47,
+    "manifest": "runs/dag_common_spectral_peaks/manifest.json"
+  },
+  {
+    "run_id": "dag_full_all_bins",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "all_bins",
+    "start": "2010-09-03",
+    "end": "2024-11-22",
+    "rows": 3626,
+    "source_sha256_matches": 47,
+    "manifest": "runs/dag_full_all_bins/manifest.json"
+  },
+  {
+    "run_id": "dag_full_spectral_peaks",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "spectral_peaks",
+    "start": "2010-09-03",
+    "end": "2024-11-22",
+    "rows": 3626,
+    "source_sha256_matches": 47,
+    "manifest": "runs/dag_full_spectral_peaks/manifest.json"
+  },
+  {
+    "run_id": "dag_ghost_all_bins",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "all_bins",
+    "start": "2010-09-03",
+    "end": "2024-11-22",
+    "rows": 3626,
+    "source_sha256_matches": 47,
+    "manifest": "runs/dag_ghost_all_bins/manifest.json"
+  },
+  {
+    "run_id": "dag_ghost_spectral_peaks",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "spectral_peaks",
+    "start": "2010-09-03",
+    "end": "2024-11-22",
+    "rows": 3626,
+    "source_sha256_matches": 47,
+    "manifest": "runs/dag_ghost_spectral_peaks/manifest.json"
+  },
+  {
+    "run_id": "investing_calendar_all_bins",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "all_bins",
+    "start": "2012-12-28",
+    "end": "2025-03-28",
+    "rows": 3111,
+    "source_sha256_matches": 47,
+    "manifest": "runs/investing_calendar_all_bins/manifest.json"
+  },
+  {
+    "run_id": "investing_calendar_spectral_peaks",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "spectral_peaks",
+    "start": "2012-12-28",
+    "end": "2025-03-28",
+    "rows": 3111,
+    "source_sha256_matches": 47,
+    "manifest": "runs/investing_calendar_spectral_peaks/manifest.json"
+  },
+  {
+    "run_id": "investing_common_all_bins",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "all_bins",
+    "start": "2012-12-28",
+    "end": "2024-11-22",
+    "rows": 3032,
+    "source_sha256_matches": 47,
+    "manifest": "runs/investing_common_all_bins/manifest.json"
+  },
+  {
+    "run_id": "investing_common_spectral_peaks",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "spectral_peaks",
+    "start": "2012-12-28",
+    "end": "2024-11-22",
+    "rows": 3032,
+    "source_sha256_matches": 47,
+    "manifest": "runs/investing_common_spectral_peaks/manifest.json"
+  },
+  {
+    "run_id": "investing_full_all_bins",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "all_bins",
+    "start": "2012-12-28",
+    "end": "2025-03-28",
+    "rows": 3117,
+    "source_sha256_matches": 47,
+    "manifest": "runs/investing_full_all_bins/manifest.json"
+  },
+  {
+    "run_id": "investing_full_spectral_peaks",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "spectral_peaks",
+    "start": "2012-12-28",
+    "end": "2025-03-28",
+    "rows": 3117,
+    "source_sha256_matches": 47,
+    "manifest": "runs/investing_full_spectral_peaks/manifest.json"
+  },
+  {
+    "run_id": "portara_short_all_bins",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "all_bins",
+    "start": "2026-05-04",
+    "end": "2026-09-04",
+    "rows": 90,
+    "source_sha256_matches": 47,
+    "manifest": "runs/portara_short_all_bins/manifest.json"
+  },
+  {
+    "run_id": "portara_short_spectral_peaks",
+    "group": "frozen",
+    "index": "VSTOXX",
+    "fft": "spectral_peaks",
+    "start": "2026-05-04",
+    "end": "2026-09-04",
+    "rows": 90,
+    "source_sha256_matches": 47,
+    "manifest": "runs/portara_short_spectral_peaks/manifest.json"
+  },
+  {
+    "run_id": "vix_2025_all_bins",
+    "group": "frozen",
+    "index": "VIX",
+    "fft": "all_bins",
+    "start": "1990-01-02",
+    "end": "2025-12-31",
+    "rows": 9091,
+    "source_sha256_matches": 47,
+    "manifest": "runs/vix_2025_all_bins/manifest.json"
+  },
+  {
+    "run_id": "vix_2025_default",
+    "group": "frozen",
+    "index": "VIX",
+    "fft": "spectral_peaks",
+    "start": "1990-01-02",
+    "end": "2025-12-31",
+    "rows": 9091,
+    "source_sha256_matches": 47,
+    "manifest": "runs/vix_2025_default/manifest.json"
+  },
+  {
+    "run_id": "vxo_2020_all_bins",
+    "group": "frozen",
+    "index": "VXO",
+    "fft": "all_bins",
+    "start": "1986-01-02",
+    "end": "2020-12-31",
+    "rows": 8815,
+    "source_sha256_matches": 47,
+    "manifest": "runs/vxo_2020_all_bins/manifest.json"
+  },
+  {
+    "run_id": "vxo_2020_default",
+    "group": "frozen",
+    "index": "VXO",
+    "fft": "spectral_peaks",
+    "start": "1986-01-02",
+    "end": "2020-12-31",
+    "rows": 8815,
+    "source_sha256_matches": 47,
+    "manifest": "runs/vxo_2020_default/manifest.json"
+  },
+  {
+    "run_id": "vix_2026_all_bins",
+    "group": "events",
+    "index": "VIX",
+    "fft": "all_bins",
+    "start": "1990-01-02",
+    "end": "2026-11-09",
+    "rows": 9312,
+    "source_sha256_matches": 47,
+    "manifest": "runs/vix_2026_all_bins/manifest.json"
+  },
+  {
+    "run_id": "vix_2026_spectral_peaks",
+    "group": "events",
+    "index": "VIX",
+    "fft": "spectral_peaks",
+    "start": "1990-01-02",
+    "end": "2026-11-09",
+    "rows": 9312,
+    "source_sha256_matches": 47,
+    "manifest": "runs/vix_2026_spectral_peaks/manifest.json"
+  }
+]

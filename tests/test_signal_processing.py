@@ -124,3 +124,61 @@ def test_spectral_peak_filter_percentile_95():
     mirrored, _ = mirror_series(x)
     X_95 = spectral_peak_filter(mirrored, 95.0)
     assert X_95 is not None
+
+
+def test_hilbert_even_extension_has_no_endpoint_jump():
+    # At both reflection axes an even periodic extension has zero quadrature.
+    # Trimming before Hilbert produces a fictitious jump from 40 back to 10.
+    x = np.linspace(10.0, 40.0, 101)
+    env = process_series(x, percentile_threshold=0, filter_mode='all_bins')
+    np.testing.assert_allclose(env[[0, -1]], x[[0, -1]], atol=1e-12)
+
+
+def test_analytic_single_cosine_with_offset():
+    # Exactly one period after mirroring, so the analytic envelope is known.
+    angle = np.linspace(0, np.pi, 101)
+    x = 10 + 2*np.cos(angle)
+    expected = np.sqrt(104 + 40*np.cos(angle))
+    env = process_series(x, percentile_threshold=0, filter_mode='all_bins')
+    np.testing.assert_allclose(env, expected, atol=1e-12)
+
+
+def test_spectral_peak_percentile_differs_from_all_bins():
+    # Interior local maxima have amplitudes 10, 2, 5; median is 5.
+    amplitudes = np.array([40., 1., 10., 1., 2., 1., 5., 1., 0.])
+    x = np.fft.irfft(amplitudes, n=16)
+    filtered = spectral_peak_filter(x, 50, filter_mode='spectral_peaks')
+    expected = amplitudes.copy()
+    expected[amplitudes < 5] = 0
+    np.testing.assert_allclose(filtered, expected, atol=1e-12)
+    legacy = spectral_peak_filter(x, 50, filter_mode='all_bins')
+    assert np.count_nonzero(np.abs(legacy) > 1e-10) > np.count_nonzero(np.abs(filtered) > 1e-10)
+
+
+def test_no_spectral_maxima_is_defined_identity_filter():
+    amplitudes = np.array([40., 8., 6., 4., 2.])
+    x = np.fft.irfft(amplitudes, n=8)
+    np.testing.assert_allclose(spectral_peak_filter(x, 95), amplitudes, atol=1e-12)
+
+
+@pytest.mark.parametrize('value', [-1, 101, np.nan])
+def test_bad_percentile_rejected(value):
+    with pytest.raises(ValueError):
+        process_series(np.arange(20.), percentile_threshold=value)
+
+
+def test_empty_and_constant_envelopes():
+    assert process_series(np.array([])).shape == (0,)
+    np.testing.assert_allclose(process_series(np.full(12, 17.0)), 17.0)
+    np.testing.assert_allclose(process_series(np.array([17.0])), [17.0])
+
+
+@pytest.mark.parametrize('x', [[1., np.nan, 3.], [[1., 2.]], [1., np.inf]])
+def test_nonfinite_or_nonvector_input_rejected(x):
+    with pytest.raises(ValueError):
+        process_series(x)
+
+
+def test_unknown_filter_mode_rejected():
+    with pytest.raises(ValueError, match='filter_mode'):
+        process_series(np.arange(20.), filter_mode='guess')

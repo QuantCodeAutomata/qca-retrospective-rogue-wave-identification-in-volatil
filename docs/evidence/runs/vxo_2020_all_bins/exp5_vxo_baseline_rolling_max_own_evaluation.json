@@ -1,0 +1,209 @@
+{
+  "full_sample": {
+    "major": {
+      "peaks_detected_pct": 88.88888888888889,
+      "false_signal_pct": 12.5,
+      "precision_pct": 68.75,
+      "precision_excl_late_pct": 73.33333333333333,
+      "n_peaks": 9,
+      "n_signals": 16,
+      "n_evaluated_signals": 16,
+      "n_detected": 11,
+      "n_unique_detected_peaks": 8,
+      "n_false": 2,
+      "n_late": 1,
+      "n_low": 2,
+      "n_recovery": 0,
+      "n_censored": 0
+    },
+    "lower": {
+      "peaks_detected_pct": 69.23076923076923,
+      "false_signal_pct": 12.5,
+      "precision_pct": 75.0,
+      "precision_excl_late_pct": 85.71428571428571,
+      "n_peaks": 13,
+      "n_signals": 16,
+      "n_evaluated_signals": 16,
+      "n_detected": 12,
+      "n_unique_detected_peaks": 9,
+      "n_false": 2,
+      "n_late": 2,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    }
+  },
+  "after_warmup": {
+    "major": {
+      "peaks_detected_pct": 88.88888888888889,
+      "false_signal_pct": 12.5,
+      "precision_pct": 68.75,
+      "precision_excl_late_pct": 73.33333333333333,
+      "n_peaks": 9,
+      "n_signals": 16,
+      "n_evaluated_signals": 16,
+      "n_detected": 11,
+      "n_unique_detected_peaks": 8,
+      "n_false": 2,
+      "n_late": 1,
+      "n_low": 2,
+      "n_recovery": 0,
+      "n_censored": 0
+    },
+    "lower": {
+      "peaks_detected_pct": 69.23076923076923,
+      "false_signal_pct": 12.5,
+      "precision_pct": 75.0,
+      "precision_excl_late_pct": 85.71428571428571,
+      "n_peaks": 13,
+      "n_signals": 16,
+      "n_evaluated_signals": 16,
+      "n_detected": 12,
+      "n_unique_detected_peaks": 9,
+      "n_false": 2,
+      "n_late": 2,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    }
+  },
+  "endpoint_censored": {
+    "major": {
+      "peaks_detected_pct": 88.88888888888889,
+      "false_signal_pct": 12.5,
+      "precision_pct": 68.75,
+      "precision_excl_late_pct": 73.33333333333333,
+      "n_peaks": 9,
+      "n_signals": 16,
+      "n_evaluated_signals": 16,
+      "n_detected": 11,
+      "n_unique_detected_peaks": 8,
+      "n_false": 2,
+      "n_late": 1,
+      "n_low": 2,
+      "n_recovery": 0,
+      "n_censored": 0
+    },
+    "lower": {
+      "peaks_detected_pct": 69.23076923076923,
+      "false_signal_pct": 12.5,
+      "precision_pct": 75.0,
+      "precision_excl_late_pct": 85.71428571428571,
+      "n_peaks": 13,
+      "n_signals": 16,
+      "n_evaluated_signals": 16,
+      "n_detected": 12,
+      "n_unique_detected_peaks": 9,
+      "n_false": 2,
+      "n_late": 2,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    }
+  },
+  "out_of_sample": {
+    "status": "configured",
+    "insample_end": "2004-12-31",
+    "metrics": {
+      "major": {
+        "peaks_detected_pct": 100.0,
+        "false_signal_pct": 0.0,
+        "precision_pct": 71.42857142857143,
+        "precision_excl_late_pct": 71.42857142857143,
+        "n_peaks": 4,
+        "n_signals": 7,
+        "n_evaluated_signals": 7,
+        "n_detected": 5,
+        "n_unique_detected_peaks": 4,
+        "n_false": 0,
+        "n_late": 0,
+        "n_low": 2,
+        "n_recovery": 0,
+        "n_censored": 0
+      },
+      "lower": {
+        "peaks_detected_pct": 71.42857142857143,
+        "false_signal_pct": 0.0,
+        "precision_pct": 85.71428571428571,
+        "precision_excl_late_pct": 100.0,
+        "n_peaks": 7,
+        "n_signals": 7,
+        "n_evaluated_signals": 7,
+        "n_detected": 6,
+        "n_unique_detected_peaks": 5,
+        "n_false": 0,
+        "n_late": 1,
+        "n_low": 0,
+        "n_recovery": 0,
+        "n_censored": 0
+      }
+    },
+    "note": "fixed thresholds; no fitting; retrospective labels and historical peak context retained"
+  },
+  "diagnostics": {
+    "eligible_warning_days": 8727,
+    "days_above_threshold": 90,
+    "days_above_threshold_pct": 1.0312822275696116,
+    "alarm_fraction": 0.010312822275696116,
+    "n_episodes": 16,
+    "open_episodes_at_end": 0,
+    "episode_duration_observations": {
+      "count": 16,
+      "min": 1.0,
+      "median": 4.0,
+      "max": 20.0
+    },
+    "useful_episode_lead_observations": {
+      "major": {
+        "count": 11,
+        "min": 1.0,
+        "median": 13.0,
+        "max": 210.0
+      },
+      "lower": {
+        "count": 12,
+        "min": 1.0,
+        "median": 12.0,
+        "max": 221.0
+      }
+    },
+    "detected_event_first_lead_observations": {
+      "major": {
+        "count": 8,
+        "min": 1.0,
+        "median": 12.0,
+        "max": 210.0
+      },
+      "lower": {
+        "count": 9,
+        "min": 1.0,
+        "median": 11.0,
+        "max": 221.0
+      }
+    },
+    "calendar": "supplied observed sessions; no fill or calendar approximation",
+    "label_warning": "catalog is retrospective; these metrics do not establish prospective or trading performance"
+  },
+  "is_synthetic": false,
+  "data_provenance": {
+    "source": "local_csv",
+    "source_file": "VXO.csv",
+    "source_file_sha256": "20e7a59b499db82be690fd5e0e1d0a66b4975b0f01ef437fab85867d4acb2484",
+    "date_column": "date",
+    "high_column": "high",
+    "is_synthetic": false,
+    "index_identity": "asserted_by_input_owner",
+    "requested_start_inclusive": null,
+    "requested_end_inclusive": "2020-12-31",
+    "source_rows": 8819,
+    "used_rows": 8815,
+    "actual_start": "1986-01-02",
+    "actual_end": "2020-12-31",
+    "weekend_rows": 0,
+    "series_sha256": "6c8a7fdc64f17d5f29ae9d0172674be75dd01e3928bf8883b1fe350677085027"
+  },
+  "catalog": {
+    "source": "full_sample_retrospective",
+    "swh": 8.973077313004563
+  }
+}

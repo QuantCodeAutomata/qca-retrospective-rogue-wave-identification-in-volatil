@@ -1,0 +1,6 @@
+signal_date,classification,associated_peak_date,lead_trading_days,days_since_previous_peak
+2001-09-19,late,2001-09-19,0.0,0.0
+2008-10-07,detected,2008-10-14,5.0,1512.0
+2011-08-12,late,2011-08-09,-3.0,3.0
+2020-03-06,detected,2020-03-16,6.0,523.0
+2025-04-10,late,2025-04-08,-2.0,2.0

@@ -1,0 +1,176 @@
+{
+  "full_sample": {
+    "major": {
+      "peaks_detected_pct": 66.66666666666667,
+      "false_signal_pct": 0.0,
+      "precision_pct": 75.0,
+      "precision_excl_late_pct": 93.75,
+      "n_peaks": 12,
+      "n_signals": 20,
+      "n_evaluated_signals": 20,
+      "n_detected": 15,
+      "n_unique_detected_peaks": 8,
+      "n_false": 0,
+      "n_late": 4,
+      "n_low": 1,
+      "n_recovery": 0,
+      "n_censored": 0
+    },
+    "lower": {
+      "peaks_detected_pct": 53.333333333333336,
+      "false_signal_pct": 0.0,
+      "precision_pct": 75.0,
+      "precision_excl_late_pct": 100.0,
+      "n_peaks": 15,
+      "n_signals": 20,
+      "n_evaluated_signals": 20,
+      "n_detected": 15,
+      "n_unique_detected_peaks": 8,
+      "n_false": 0,
+      "n_late": 5,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    }
+  },
+  "after_warmup": {
+    "major": {
+      "peaks_detected_pct": 66.66666666666667,
+      "false_signal_pct": 0.0,
+      "precision_pct": 75.0,
+      "precision_excl_late_pct": 93.75,
+      "n_peaks": 12,
+      "n_signals": 20,
+      "n_evaluated_signals": 20,
+      "n_detected": 15,
+      "n_unique_detected_peaks": 8,
+      "n_false": 0,
+      "n_late": 4,
+      "n_low": 1,
+      "n_recovery": 0,
+      "n_censored": 0
+    },
+    "lower": {
+      "peaks_detected_pct": 53.333333333333336,
+      "false_signal_pct": 0.0,
+      "precision_pct": 75.0,
+      "precision_excl_late_pct": 100.0,
+      "n_peaks": 15,
+      "n_signals": 20,
+      "n_evaluated_signals": 20,
+      "n_detected": 15,
+      "n_unique_detected_peaks": 8,
+      "n_false": 0,
+      "n_late": 5,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    }
+  },
+  "endpoint_censored": {
+    "major": {
+      "peaks_detected_pct": 66.66666666666667,
+      "false_signal_pct": 0.0,
+      "precision_pct": 75.0,
+      "precision_excl_late_pct": 93.75,
+      "n_peaks": 12,
+      "n_signals": 20,
+      "n_evaluated_signals": 20,
+      "n_detected": 15,
+      "n_unique_detected_peaks": 8,
+      "n_false": 0,
+      "n_late": 4,
+      "n_low": 1,
+      "n_recovery": 0,
+      "n_censored": 0
+    },
+    "lower": {
+      "peaks_detected_pct": 53.333333333333336,
+      "false_signal_pct": 0.0,
+      "precision_pct": 75.0,
+      "precision_excl_late_pct": 100.0,
+      "n_peaks": 15,
+      "n_signals": 20,
+      "n_evaluated_signals": 20,
+      "n_detected": 15,
+      "n_unique_detected_peaks": 8,
+      "n_false": 0,
+      "n_late": 5,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    }
+  },
+  "out_of_sample": {
+    "status": "not_configured",
+    "insample_end": null,
+    "metrics": {},
+    "note": "fixed thresholds; no fitting; retrospective labels and historical peak context retained"
+  },
+  "diagnostics": {
+    "eligible_warning_days": 9224,
+    "days_above_threshold": 113,
+    "days_above_threshold_pct": 1.2250650477016478,
+    "alarm_fraction": 0.012250650477016478,
+    "n_episodes": 20,
+    "open_episodes_at_end": 0,
+    "episode_duration_observations": {
+      "count": 20,
+      "min": 1.0,
+      "median": 4.0,
+      "max": 21.0
+    },
+    "useful_episode_lead_observations": {
+      "major": {
+        "count": 15,
+        "min": 1.0,
+        "median": 8.0,
+        "max": 218.0
+      },
+      "lower": {
+        "count": 15,
+        "min": 1.0,
+        "median": 8.0,
+        "max": 218.0
+      }
+    },
+    "detected_event_first_lead_observations": {
+      "major": {
+        "count": 8,
+        "min": 2.0,
+        "median": 14.0,
+        "max": 218.0
+      },
+      "lower": {
+        "count": 8,
+        "min": 2.0,
+        "median": 14.0,
+        "max": 218.0
+      }
+    },
+    "calendar": "supplied observed sessions; no fill or calendar approximation",
+    "label_warning": "catalog is retrospective; these metrics do not establish prospective or trading performance"
+  },
+  "is_synthetic": false,
+  "data_provenance": {
+    "source": "local_csv",
+    "source_file": "VIX.csv",
+    "source_file_sha256": "9f93526cfcf2085802a25573dd3807f5a361e31674845a244839b22cf1b525d5",
+    "date_column": "date",
+    "high_column": "high",
+    "is_synthetic": false,
+    "index_identity": "asserted_by_input_owner",
+    "requested_start_inclusive": null,
+    "requested_end_inclusive": null,
+    "source_rows": 9312,
+    "used_rows": 9312,
+    "actual_start": "1990-01-02",
+    "actual_end": "2026-11-09",
+    "weekend_rows": 0,
+    "series_sha256": "331c8dcfcf459ce9be1c60bfb6ac771d25bbd71d66101177d9ee0f901533159f"
+  },
+  "catalog": {
+    "source": "full_sample_retrospective",
+    "swh": 7.290674685582323
+  }
+}

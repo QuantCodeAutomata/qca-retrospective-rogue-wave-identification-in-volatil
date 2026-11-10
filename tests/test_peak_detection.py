@@ -168,3 +168,40 @@ def test_prominence_bounds():
     x = np.sin(np.linspace(0, 20, 100)) * 3 + 5
     peaks, proms = detect_peaks_and_prominences(x)
     assert np.all(proms >= 0)
+
+
+def test_full_analysis_honors_swh_top_fraction():
+    x = np.array([0., 1., 0., 2., 0., 3., 0., 4., 0., 5., 0., 6., 0.])
+    _, swh = full_peak_analysis(make_dates(len(x)), x, swh_top_fraction=0.5)
+    assert swh == pytest.approx(5.0)  # largest three: 4,5,6
+
+
+def test_empty_peak_table_has_stable_schema():
+    table, swh = full_peak_analysis(make_dates(10), np.ones(10))
+    assert table.empty
+    assert list(table.columns) == ['date', 'envelope_value', 'prominence', 'severity']
+    assert swh == 0
+
+
+def test_major_lower_threshold_boundaries_are_strict():
+    proms = np.array([2., 2.5, 2.5001, 1.9999])
+    dates = make_dates(4)
+    table = classify_rogue_peaks(dates, proms, np.arange(4), proms, swh=1.)
+    assert table.severity.tolist() == ['normal', 'lower', 'major', 'normal']
+
+
+def test_prominence_window_not_lost_after_peak_detection():
+    peaks, proms = detect_peaks_and_prominences(np.array([0., 6., 5., 6., 0.]), {'wlen': 3})
+    np.testing.assert_array_equal(peaks, [1, 3])
+    np.testing.assert_allclose(proms, [1., 1.])
+
+
+def test_mismatched_peak_lengths_not_silently_truncated():
+    with pytest.raises(ValueError, match='equal lengths'):
+        classify_rogue_peaks(make_dates(5), np.ones(5), np.array([1, 3]), np.array([2.]), 1.)
+
+
+@pytest.mark.parametrize('fraction', [0, -1, 1.1, np.nan])
+def test_invalid_swh_fraction_rejected(fraction):
+    with pytest.raises(ValueError):
+        compute_swh(np.array([1., 2.]), top_fraction=fraction)

@@ -1,0 +1,2 @@
+peak_date,severity,detected,n_useful_episodes,first_signal_date,lead_trading_days
+2020-03-16,major,True,2,2020-03-03,9.0

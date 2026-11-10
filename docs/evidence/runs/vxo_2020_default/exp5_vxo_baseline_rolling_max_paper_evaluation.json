@@ -1,0 +1,223 @@
+{
+  "full_sample": {
+    "major": {
+      "peaks_detected_pct": 50.0,
+      "false_signal_pct": 0.0,
+      "precision_pct": 80.0,
+      "precision_excl_late_pct": 100.0,
+      "n_peaks": 8,
+      "n_signals": 5,
+      "n_evaluated_signals": 5,
+      "n_detected": 4,
+      "n_unique_detected_peaks": 4,
+      "n_false": 0,
+      "n_late": 1,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    },
+    "lower": {
+      "peaks_detected_pct": 30.76923076923077,
+      "false_signal_pct": 0.0,
+      "precision_pct": 80.0,
+      "precision_excl_late_pct": 100.0,
+      "n_peaks": 13,
+      "n_signals": 5,
+      "n_evaluated_signals": 5,
+      "n_detected": 4,
+      "n_unique_detected_peaks": 4,
+      "n_false": 0,
+      "n_late": 1,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    }
+  },
+  "after_warmup": {
+    "major": {
+      "peaks_detected_pct": 50.0,
+      "false_signal_pct": 0.0,
+      "precision_pct": 80.0,
+      "precision_excl_late_pct": 100.0,
+      "n_peaks": 8,
+      "n_signals": 5,
+      "n_evaluated_signals": 5,
+      "n_detected": 4,
+      "n_unique_detected_peaks": 4,
+      "n_false": 0,
+      "n_late": 1,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    },
+    "lower": {
+      "peaks_detected_pct": 30.76923076923077,
+      "false_signal_pct": 0.0,
+      "precision_pct": 80.0,
+      "precision_excl_late_pct": 100.0,
+      "n_peaks": 13,
+      "n_signals": 5,
+      "n_evaluated_signals": 5,
+      "n_detected": 4,
+      "n_unique_detected_peaks": 4,
+      "n_false": 0,
+      "n_late": 1,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    }
+  },
+  "endpoint_censored": {
+    "major": {
+      "peaks_detected_pct": 50.0,
+      "false_signal_pct": 0.0,
+      "precision_pct": 80.0,
+      "precision_excl_late_pct": 100.0,
+      "n_peaks": 8,
+      "n_signals": 5,
+      "n_evaluated_signals": 5,
+      "n_detected": 4,
+      "n_unique_detected_peaks": 4,
+      "n_false": 0,
+      "n_late": 1,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    },
+    "lower": {
+      "peaks_detected_pct": 30.76923076923077,
+      "false_signal_pct": 0.0,
+      "precision_pct": 80.0,
+      "precision_excl_late_pct": 100.0,
+      "n_peaks": 13,
+      "n_signals": 5,
+      "n_evaluated_signals": 5,
+      "n_detected": 4,
+      "n_unique_detected_peaks": 4,
+      "n_false": 0,
+      "n_late": 1,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    }
+  },
+  "out_of_sample": {
+    "status": "configured",
+    "insample_end": "2004-12-31",
+    "metrics": {
+      "major": {
+        "peaks_detected_pct": 50.0,
+        "false_signal_pct": 0.0,
+        "precision_pct": 100.0,
+        "precision_excl_late_pct": 100.0,
+        "n_peaks": 4,
+        "n_signals": 2,
+        "n_evaluated_signals": 2,
+        "n_detected": 2,
+        "n_unique_detected_peaks": 2,
+        "n_false": 0,
+        "n_late": 0,
+        "n_low": 0,
+        "n_recovery": 0,
+        "n_censored": 0
+      },
+      "lower": {
+        "peaks_detected_pct": 28.571428571428573,
+        "false_signal_pct": 0.0,
+        "precision_pct": 100.0,
+        "precision_excl_late_pct": 100.0,
+        "n_peaks": 7,
+        "n_signals": 2,
+        "n_evaluated_signals": 2,
+        "n_detected": 2,
+        "n_unique_detected_peaks": 2,
+        "n_false": 0,
+        "n_late": 0,
+        "n_low": 0,
+        "n_recovery": 0,
+        "n_censored": 0
+      }
+    },
+    "note": "fixed thresholds; no fitting; retrospective labels and historical peak context retained"
+  },
+  "diagnostics": {
+    "eligible_warning_days": 8727,
+    "days_above_threshold": 37,
+    "days_above_threshold_pct": 0.42397158244528477,
+    "alarm_fraction": 0.004239715824452848,
+    "n_episodes": 5,
+    "open_episodes_at_end": 0,
+    "episode_duration_observations": {
+      "count": 5,
+      "min": 1.0,
+      "median": 10.0,
+      "max": 12.0
+    },
+    "useful_episode_lead_observations": {
+      "major": {
+        "count": 4,
+        "min": 1.0,
+        "median": 1.5,
+        "max": 54.0
+      },
+      "lower": {
+        "count": 4,
+        "min": 1.0,
+        "median": 1.5,
+        "max": 54.0
+      }
+    },
+    "detected_event_first_lead_observations": {
+      "major": {
+        "count": 4,
+        "min": 1.0,
+        "median": 1.5,
+        "max": 54.0
+      },
+      "lower": {
+        "count": 4,
+        "min": 1.0,
+        "median": 1.5,
+        "max": 54.0
+      }
+    },
+    "calendar": "supplied observed sessions; no fill or calendar approximation",
+    "label_warning": "catalog is retrospective; these metrics do not establish prospective or trading performance"
+  },
+  "is_synthetic": false,
+  "data_provenance": {
+    "source": "local_csv",
+    "source_file": "VXO.csv",
+    "source_file_sha256": "20e7a59b499db82be690fd5e0e1d0a66b4975b0f01ef437fab85867d4acb2484",
+    "date_column": "date",
+    "high_column": "high",
+    "is_synthetic": false,
+    "index_identity": "asserted_by_input_owner",
+    "requested_start_inclusive": null,
+    "requested_end_inclusive": "2020-12-31",
+    "source_rows": 8819,
+    "used_rows": 8815,
+    "actual_start": "1986-01-02",
+    "actual_end": "2020-12-31",
+    "weekend_rows": 0,
+    "series_sha256": "6c8a7fdc64f17d5f29ae9d0172674be75dd01e3928bf8883b1fe350677085027"
+  },
+  "catalog": {
+    "index": "VXO",
+    "catalog": "paper_supplementary_events",
+    "source_file": "verification/source_evidence/paper_VXO_supplement_table.csv",
+    "source_sha256": "80bfb2d2d9f50e3f8036e41abff34897164f270291bc91a49ce6ab0ed57c2d24",
+    "paper": "arXiv:2606.31475v4",
+    "supplementary_table": "S2",
+    "reference_kind": "fixed retrospective paper catalog; not independent prospective labels",
+    "calendar_start": "1986-01-02",
+    "calendar_end": "2020-12-31",
+    "total_events": 13,
+    "covered_events": 13,
+    "covered_major_events": 8,
+    "covered_lower_events": 5,
+    "coverage_complete": true,
+    "out_of_range_events": [],
+    "missing_in_range_dates": []
+  }
+}

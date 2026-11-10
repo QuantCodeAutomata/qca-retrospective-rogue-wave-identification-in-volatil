@@ -1,88 +1,103 @@
+"""FFT/Hilbert envelope extraction with explicit paper-ambiguity choices."""
 import numpy as np
 from scipy.signal import find_peaks, hilbert
 
 
+def _real_vector(x, name="signal"):
+    if np.iscomplexobj(x):
+        raise ValueError(f"{name} must be real-valued")
+    a = np.asarray(x, dtype=float)
+    if a.ndim != 1 or not np.all(np.isfinite(a)):
+        raise ValueError(f"{name} must be a finite one-dimensional array")
+    return a
+
+
 def mirror_series(x: np.ndarray) -> tuple:
-    """Symmetric reflection excluding endpoint duplicate.
+    """Reflect without duplicated endpoints: x followed by x[-2:0:-1].
 
-    Convention: [x[0],...,x[N-1], x[N-2],...,x[1]], length = 2*N-2.
-    Returns (mirrored_array, original_length).
+    The manuscript specifies mirroring, but not its endpoint convention.
+    Returns the extended array and original length.
     """
-    N = len(x)
-    if N < 2:
-        return x.copy(), N
-    mirrored = np.concatenate([x, x[-2:0:-1]])  # excludes x[N-1] and x[0] from reflection
-    return mirrored, N
+    x = _real_vector(x)
+    n = len(x)
+    return (np.concatenate([x, x[-2:0:-1]]) if n > 1 else x.copy()), n
 
 
-def spectral_peak_filter(x_mirrored: np.ndarray, percentile_threshold: float = 92.5) -> np.ndarray:
-    """FFT-based denoising via percentile amplitude thresholding on ALL bins.
+def spectral_peak_filter(
+    x_mirrored: np.ndarray,
+    percentile_threshold: float = 92.5,
+    filter_mode: str = "spectral_peaks",
+) -> np.ndarray:
+    """Threshold real-FFT amplitudes using an explicitly selected population.
 
-    Implementation note — two interpretations of "spectral peak filter" exist in the literature:
-    (A) Detected-peak percentile: find local peaks in the amplitude spectrum; threshold by the
-        p-th percentile of amplitudes *at those peaks*; zero all other bins.  This interpretation
-        retains very few (~5% of detected peaks) frequency components and was found empirically to
-        produce false W_i spikes in low-volatility periods while missing actual crisis events.
-    (B) All-bin percentile (adopted here): threshold the amplitude spectrum globally by the p-th
-        percentile of ALL rfft amplitudes; retain every bin at or above the threshold.  With p=95
-        this keeps the top 5% of bins by amplitude, reproducing an envelope that tracks the raw
-        series much more closely and produces W_i > 300 before major peaks with 0 false signals
-        in quiet periods.  Numerical validation on VIX confirms this interpretation is consistent
-        with the paper's reported performance targets.  # Custom resolution of paper ambiguity
+    ``spectral_peaks`` computes the percentile over interior local maxima of
+    the one-sided amplitude spectrum, then removes every coefficient whose
+    amplitude is below that threshold. DC and Nyquist are not local maxima
+    in scipy.find_peaks and are not included in that percentile population;
+    they are subjected to the same amplitude cutoff as the other bins.
+    If no spectral maxima exist, no threshold can be estimated and the
+    spectrum is returned unchanged.
 
-    Parameters
-    ----------
-    x_mirrored : np.ndarray
-        Mirrored (extended) real-valued signal.
-    percentile_threshold : float
-        Percentile (0–100) of ALL rfft amplitudes below which bins are zeroed.
-        Paper: 92.5% for descriptive analyses; 95% for real-time forecasting.
-
-    Returns
-    -------
-    np.ndarray
-        Complex rfft coefficient array with sub-threshold bins set to zero.
+    ``all_bins`` is the previous implementation: percentile over all rFFT
+    amplitudes. It is retained for sensitivity analysis, not as evidence of
+    the authors' exact algorithm. The manuscript does not specify whether
+    non-peak bins should also be removed, treatment of DC/Nyquist, or the
+    exact peak finder in Fourier space. Both choices are reproducible
+    conventions; neither is selected by fitting reported performance.
     """
-    X = np.fft.rfft(x_mirrored)
-    amplitude = np.abs(X)
-    thresh = np.percentile(amplitude, percentile_threshold)
-    X_filtered = X.copy()
-    X_filtered[amplitude < thresh] = 0.0
-    return X_filtered
+    x = _real_vector(x_mirrored)
+    if not np.isfinite(percentile_threshold) or not 0 <= percentile_threshold <= 100:
+        raise ValueError("percentile_threshold must be in [0, 100]")
+    if filter_mode not in {"spectral_peaks", "all_bins"}:
+        raise ValueError("filter_mode must be 'spectral_peaks' or 'all_bins'")
+    if len(x) == 0:
+        return np.array([], dtype=complex)
+    spectrum = np.fft.rfft(x)
+    amplitude = np.abs(spectrum)
+    if filter_mode == "spectral_peaks":
+        peaks, _ = find_peaks(amplitude)
+        if not len(peaks):
+            return spectrum
+        population = amplitude[peaks]
+    else:
+        population = amplitude
+    cutoff = np.percentile(population, percentile_threshold)
+    return np.where(amplitude >= cutoff, spectrum, 0.0)
 
 
 def reconstruct_filtered_signal(X_filtered: np.ndarray, n: int) -> np.ndarray:
-    """Inverse rfft to reconstruct real signal of length n."""
-    return np.fft.irfft(X_filtered, n=n)
+    """Inverse real FFT; pass the original mirrored length as n."""
+    if isinstance(n, (bool, np.bool_)) or not isinstance(n, (int, np.integer)) or n < 1:
+        raise ValueError("n must be a positive integer")
+    coefficients = np.asarray(X_filtered)
+    if coefficients.ndim != 1 or not np.all(np.isfinite(coefficients)):
+        raise ValueError("Fourier coefficients must be finite and one-dimensional")
+    return np.fft.irfft(coefficients, n=n)
 
 
 def extract_envelope(signal: np.ndarray) -> np.ndarray:
-    """Compute amplitude envelope via Hilbert transform."""
-    analytic = hilbert(signal)
-    return np.abs(analytic)
+    """Absolute analytic signal; callers must supply the mirrored domain."""
+    x = _real_vector(signal)
+    if len(x) == 0:
+        return x.copy()
+    return np.abs(hilbert(x))
 
 
-def process_series(x: np.ndarray, percentile_threshold: float = 92.5) -> np.ndarray:
-    """Full pipeline: mirror → spectral filter → reconstruct → trim → Hilbert envelope.
+def process_series(
+    x: np.ndarray,
+    percentile_threshold: float = 92.5,
+    filter_mode: str = "spectral_peaks",
+) -> np.ndarray:
+    """Mirror -> filter -> inverse FFT -> Hilbert -> crop original interval.
 
-    Parameters
-    ----------
-    x : np.ndarray
-        Original 1-D real-valued series (e.g., daily VIX highs).
-    percentile_threshold : float
-        Passed to spectral_peak_filter. Use 92.5 for descriptive analysis,
-        95.0 for real-time operational runs.
-
-    Returns
-    -------
-    np.ndarray
-        Envelope wave of same length as x.
+    Hilbert must operate on the mirrored domain too. Cropping beforehand
+    reintroduces the nonperiodic endpoint jump which mirroring is meant to
+    avoid. No undocumented amplitude normalisation is performed: output
+    remains in the input index units.
     """
-    if len(x) < 4:
-        return np.abs(x)
-    mirrored, N = mirror_series(x)
-    X_filtered = spectral_peak_filter(mirrored, percentile_threshold)
-    reconstructed = reconstruct_filtered_signal(X_filtered, n=len(mirrored))
-    trimmed = reconstructed[:N]
-    envelope = extract_envelope(trimmed)
-    return envelope
+    mirrored, n = mirror_series(x)
+    coefficients = spectral_peak_filter(mirrored, percentile_threshold, filter_mode)
+    if n == 0:
+        return np.array([], dtype=float)
+    reconstructed = reconstruct_filtered_signal(coefficients, len(mirrored))
+    return extract_envelope(reconstructed)[:n]

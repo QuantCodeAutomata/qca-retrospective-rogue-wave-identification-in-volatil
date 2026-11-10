@@ -1,0 +1,13 @@
+peak_date,severity,detected,n_useful_episodes,first_signal_date,lead_trading_days
+1997-10-29,major,False,0,,
+1998-09-02,major,False,0,,
+2001-09-21,major,True,1,2001-09-18,3.0
+2002-10-08,major,True,1,2002-07-24,53.0
+2008-10-14,major,True,3,2008-09-19,17.0
+2010-05-20,major,True,4,2010-05-10,8.0
+2011-08-10,major,True,1,2011-08-08,2.0
+2015-08-25,major,False,0,,
+2018-02-06,major,False,0,,
+2020-03-16,major,True,1,2020-02-28,11.0
+2022-10-12,major,True,2,2021-12-06,218.0
+2025-04-08,major,True,2,2025-03-12,19.0

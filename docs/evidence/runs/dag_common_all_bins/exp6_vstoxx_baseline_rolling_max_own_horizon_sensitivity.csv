@@ -1,0 +1,9 @@
+horizon_observations,severity,peaks_detected_pct,false_signal_pct,precision_pct,precision_excl_late_pct,n_peaks,n_signals,n_evaluated_signals,n_detected,n_unique_detected_peaks,n_false,n_late,n_low,n_recovery,n_censored
+20,major,100.0,40.0,40.0,40.0,2,5,5,2,2,2,0,1,0,0
+60,major,100.0,40.0,40.0,40.0,2,5,5,2,2,2,0,1,0,0
+120,major,100.0,40.0,40.0,40.0,2,5,5,2,2,2,0,1,0,0
+240,major,100.0,20.0,40.0,40.0,2,5,5,2,2,1,0,2,0,0
+20,lower,66.66666666666667,40.0,40.0,50.0,3,5,5,2,2,2,1,0,0,0
+60,lower,66.66666666666667,40.0,40.0,50.0,3,5,5,2,2,2,1,0,0,0
+120,lower,66.66666666666667,40.0,40.0,50.0,3,5,5,2,2,2,1,0,0,0
+240,lower,100.0,20.0,60.0,75.0,3,5,5,3,3,1,1,0,0,0

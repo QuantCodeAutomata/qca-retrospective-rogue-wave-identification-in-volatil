@@ -1,0 +1,7 @@
+signal_date,classification,associated_peak_date,lead_trading_days,days_since_previous_peak
+2016-06-27,false,,,
+2020-03-03,detected,2020-03-16,9.0,
+2020-03-10,detected,2020-03-16,4.0,
+2022-02-25,low,2022-03-04,5.0,498.0
+2022-03-04,low,2022-03-04,0.0,503.0
+2022-03-11,low,2022-03-04,-5.0,508.0

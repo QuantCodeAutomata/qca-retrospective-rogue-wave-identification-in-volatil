@@ -1,0 +1,48 @@
+{
+  "index": "VXO",
+  "interpretation": "descriptive_only; documented interpretation, not certified author reproduction",
+  "protocol": "docs/SUPPLEMENT_PROTOCOL.md",
+  "filter_mode": "all_bins",
+  "descriptive_percentile": 92.5,
+  "is_synthetic": false,
+  "input_start": "1986-01-02",
+  "input_end": "2020-12-31",
+  "figures": {
+    "figure5": {
+      "status": "completed",
+      "table": "paper_vxo_figure5_correlation.csv",
+      "figure": "paper_vxo_figure5_correlation.png",
+      "positive_lag": "future High relative to signal_date",
+      "min_gradient_exclusive": 0.0001,
+      "n_defined_lags": 61
+    },
+    "S1": {
+      "status": "not_applicable",
+      "reason": "VIX_only_in_manuscript"
+    },
+    "S2": {
+      "status": "not_applicable",
+      "reason": "VIX_only_in_manuscript"
+    },
+    "S3": {
+      "status": "not_applicable",
+      "reason": "VIX_only_in_manuscript"
+    },
+    "S4": {
+      "status": "completed",
+      "years": {
+        "2020": {
+          "status": "completed",
+          "n_rows": 253,
+          "n_unique_event_dates": 213,
+          "first_signal_date": "2020-01-02",
+          "last_signal_date": "2020-12-31",
+          "table": "paper_vxo_s4_2020_received_and_event.csv"
+        }
+      },
+      "repeated_event_dates": "preserved; no deduplication",
+      "figure": "paper_vxo_s4_received_and_event.png"
+    }
+  },
+  "summary_path": "paper_vxo_diagnostics_summary.json"
+}

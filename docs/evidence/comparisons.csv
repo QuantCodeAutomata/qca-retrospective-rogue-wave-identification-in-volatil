@@ -1,0 +1,10 @@
+kind,a,b,common_warning_dates,disagreement_days,max_abs_W_diff
+source_same_dates,dag_common_spectral_peaks,investing_common_spectral_peaks,2944,1,154.74592915238463
+boundary,dag_full_spectral_peaks,dag_ghost_spectral_peaks,3538,4,289.0401415700835
+calendar,investing_full_spectral_peaks,investing_calendar_spectral_peaks,3023,7,257.0629086152077
+history_start,dag_full_spectral_peaks,dag_common_spectral_peaks,2944,8,804.9718841889581
+source_same_dates,dag_common_all_bins,investing_common_all_bins,2944,3,480.0570993819856
+boundary,dag_full_all_bins,dag_ghost_all_bins,3538,6,745.4126168823259
+calendar,investing_full_all_bins,investing_calendar_all_bins,3023,5,367.74045684867144
+history_start,dag_full_all_bins,dag_common_all_bins,2944,12,1058.7722856002983
+fft,dag_full_spectral_peaks,dag_full_all_bins,3538,23,2225.161975436368

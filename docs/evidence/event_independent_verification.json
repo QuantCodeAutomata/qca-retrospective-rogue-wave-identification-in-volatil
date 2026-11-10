@@ -1,0 +1,19 @@
+{
+  "independent_daily_prefixes": 98,
+  "independent_dense_matrices": 980,
+  "max_M_error": 2.8421709430404007e-12,
+  "max_W_error": 1.0459189070388675e-11,
+  "all_C_and_alarm_decisions_equal": true,
+  "prefix_comparisons": [
+    {
+      "mode": "spectral_peaks",
+      "rows": 9003,
+      "past_rows_unchanged": true
+    },
+    {
+      "mode": "all_bins",
+      "rows": 9003,
+      "past_rows_unchanged": true
+    }
+  ]
+}

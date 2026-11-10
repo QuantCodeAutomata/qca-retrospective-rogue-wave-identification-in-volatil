@@ -1,0 +1,42 @@
+{
+  "index": "VIX",
+  "interpretation": "S&P 500 volatility, not direct SPX price levels",
+  "raw_source": "CBOE daily VIX OHLC",
+  "end": "2026-11-09",
+  "history_start": "1990-01-02",
+  "modes": [
+    "spectral_peaks",
+    "all_bins"
+  ],
+  "experiments": "1,4",
+  "warning_threshold": 300,
+  "gradient_count_threshold": 50,
+  "window_L": 80,
+  "block_len": 10,
+  "boundary": "dirichlet",
+  "baseline": "rolling_max",
+  "label_catalogs": [
+    "own",
+    "paper"
+  ],
+  "event_windows": {
+    "april_2025": [
+      "2025-04-01",
+      "2025-04-15"
+    ],
+    "november_2026": [
+      "2026-11-02",
+      "2026-11-09"
+    ]
+  },
+  "label_snapshots": [
+    "2025-04-08",
+    "2025-04-15",
+    "2025-12-31",
+    "2026-11-04",
+    "2026-11-05",
+    "2026-11-06",
+    "2026-11-09"
+  ],
+  "note": "Parameters frozen before this event study; events selected retrospectively by user. No prospective OOS claim. Labels near last observation provisional."
+}

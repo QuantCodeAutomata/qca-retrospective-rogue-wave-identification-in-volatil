@@ -69,3 +69,59 @@ def test_compute_warning_indicator_monotone():
     grad = np.gradient(block)
     expected_M = float(np.max(grad))
     assert abs(M_i - expected_M) < 1e-10
+
+
+def test_missing_eigenvalue_never_zero_filled():
+    with pytest.raises(ValueError, match='finite'):
+        compute_warning_indicator(np.array([np.nan, 100., 200.]))
+
+
+def test_negative_gradient_does_not_become_positive_warning():
+    block = np.arange(10, dtype=float)[::-1] * 100
+    maximum, count, warning, _ = compute_warning_indicator(block)
+    assert maximum == -100
+    assert count == 0
+    assert warning == 0
+
+
+def test_first_eligible_prefix_and_event_timestamp():
+    from src.realtime_pipeline import run_realtime_simulation
+    dates = pd.bdate_range('2020-01-01', periods=89)
+    series = pd.Series(make_synthetic_history(89), index=dates)
+    result = run_realtime_simulation(series, progress=False)
+    assert len(result) == 1
+    assert result.date.iloc[0] == dates[88]
+    assert dates[79] <= result.event_date.iloc[0] <= dates[88]
+    assert result.date_max_grad.iloc[0] == result.event_date.iloc[0]
+    assert run_realtime_simulation(series.iloc[:-1], progress=False).empty
+
+
+def test_causal_prefix_invariance_and_future_shock():
+    from src.realtime_pipeline import run_realtime_simulation
+    dates = pd.bdate_range('2020-01-01', periods=105)
+    values = make_synthetic_history(105)
+    series = pd.Series(values, index=dates)
+    short = run_realtime_simulation(series.iloc[:95], progress=False)
+    future_shock = series.copy()
+    future_shock.iloc[95:] *= 7
+    longer = run_realtime_simulation(future_shock, progress=False)
+    pd.testing.assert_frame_equal(short, longer.iloc[:len(short)].reset_index(drop=True))
+
+
+def test_realtime_solver_failure_is_not_disguised_as_no_alert(monkeypatch):
+    import src.realtime_pipeline as pipeline
+    def broken(*args, **kwargs):
+        raise np.linalg.LinAlgError('test failure')
+    monkeypatch.setattr(pipeline, 'solve_min_eigenpair', broken)
+    series = pd.Series(make_synthetic_history(89),
+                       index=pd.bdate_range('2020-01-01', periods=89))
+    with pytest.raises(RuntimeError, match='Realtime computation failed'):
+        pipeline.run_realtime_simulation(series, progress=False)
+
+
+def test_invalid_input_order_rejected():
+    from src.realtime_pipeline import run_realtime_simulation
+    series = pd.Series(make_synthetic_history(90),
+                       index=pd.bdate_range('2020-01-01', periods=90))
+    with pytest.raises(ValueError, match='sorted'):
+        run_realtime_simulation(series.iloc[::-1], progress=False)

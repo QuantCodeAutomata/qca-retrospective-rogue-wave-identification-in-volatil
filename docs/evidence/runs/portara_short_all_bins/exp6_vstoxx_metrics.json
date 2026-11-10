@@ -1,0 +1,533 @@
+{
+  "index": "VSTOXX",
+  "experiment": 6,
+  "data_provenance": {
+    "source": "local_csv",
+    "source_file": "portara_short.csv",
+    "source_file_sha256": "8224a32fd6283a0782aa298151d05f04d2120beeb2ebe9894135f12647e30525",
+    "date_column": "Date",
+    "high_column": "High",
+    "is_synthetic": false,
+    "index_identity": "asserted_by_input_owner",
+    "requested_start_inclusive": null,
+    "requested_end_inclusive": null,
+    "source_rows": 90,
+    "used_rows": 90,
+    "actual_start": "2026-05-04",
+    "actual_end": "2026-09-04",
+    "weekend_rows": 0,
+    "series_sha256": "73eb20ee7ccadfc72e35b16fca0764041baafe8baba744522b817d8b543f9f1b"
+  },
+  "protocol": {
+    "primary_labels": "own",
+    "reference_labels": "computed full-sample retrospective event catalog",
+    "reference_use": "evaluation only; NOT a causal model input",
+    "reference_percentile": 95.0,
+    "swh": 1.3803124945730474,
+    "filter_mode": "all_bins",
+    "signal_availability": "after the daily High is finalized; event_date is explanatory only",
+    "trading_day_calendar": "actual observed session index",
+    "first_eligible_signal_date": "2026-09-03",
+    "boundary_condition": "dirichlet",
+    "amplitude_scale": "raw index points; paper normalization unspecified",
+    "thresholds": {
+      "threshold_grad_count": 50.0,
+      "threshold_warning": 300.0,
+      "detection_window_days": 240,
+      "min_inter_peak_days": 80,
+      "late_signal_days": 10
+    },
+    "right_edge_labels": "final incomplete waves and endpoint prominences are unresolved"
+  },
+  "full_sample": {
+    "major": {
+      "peaks_detected_pct": null,
+      "false_signal_pct": null,
+      "precision_pct": null,
+      "precision_excl_late_pct": null,
+      "n_peaks": 0,
+      "n_signals": 0,
+      "n_evaluated_signals": 0,
+      "n_detected": 0,
+      "n_unique_detected_peaks": 0,
+      "n_false": 0,
+      "n_late": 0,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    },
+    "lower": {
+      "peaks_detected_pct": null,
+      "false_signal_pct": null,
+      "precision_pct": null,
+      "precision_excl_late_pct": null,
+      "n_peaks": 0,
+      "n_signals": 0,
+      "n_evaluated_signals": 0,
+      "n_detected": 0,
+      "n_unique_detected_peaks": 0,
+      "n_false": 0,
+      "n_late": 0,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    }
+  },
+  "after_warmup": {
+    "major": {
+      "peaks_detected_pct": null,
+      "false_signal_pct": null,
+      "precision_pct": null,
+      "precision_excl_late_pct": null,
+      "n_peaks": 0,
+      "n_signals": 0,
+      "n_evaluated_signals": 0,
+      "n_detected": 0,
+      "n_unique_detected_peaks": 0,
+      "n_false": 0,
+      "n_late": 0,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    },
+    "lower": {
+      "peaks_detected_pct": null,
+      "false_signal_pct": null,
+      "precision_pct": null,
+      "precision_excl_late_pct": null,
+      "n_peaks": 0,
+      "n_signals": 0,
+      "n_evaluated_signals": 0,
+      "n_detected": 0,
+      "n_unique_detected_peaks": 0,
+      "n_false": 0,
+      "n_late": 0,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    }
+  },
+  "endpoint_censored": {
+    "major": {
+      "peaks_detected_pct": null,
+      "false_signal_pct": null,
+      "precision_pct": null,
+      "precision_excl_late_pct": null,
+      "n_peaks": 0,
+      "n_signals": 0,
+      "n_evaluated_signals": 0,
+      "n_detected": 0,
+      "n_unique_detected_peaks": 0,
+      "n_false": 0,
+      "n_late": 0,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    },
+    "lower": {
+      "peaks_detected_pct": null,
+      "false_signal_pct": null,
+      "precision_pct": null,
+      "precision_excl_late_pct": null,
+      "n_peaks": 0,
+      "n_signals": 0,
+      "n_evaluated_signals": 0,
+      "n_detected": 0,
+      "n_unique_detected_peaks": 0,
+      "n_false": 0,
+      "n_late": 0,
+      "n_low": 0,
+      "n_recovery": 0,
+      "n_censored": 0
+    }
+  },
+  "out_of_sample": {
+    "status": "not_configured",
+    "insample_end": null,
+    "metrics": {},
+    "note": "fixed thresholds; no fitting; retrospective labels and historical peak context retained"
+  },
+  "label_catalogs": {
+    "own": {
+      "catalog": {
+        "source": "full_sample_retrospective",
+        "swh": 1.3803124945730474
+      },
+      "full_sample": {
+        "major": {
+          "peaks_detected_pct": null,
+          "false_signal_pct": null,
+          "precision_pct": null,
+          "precision_excl_late_pct": null,
+          "n_peaks": 0,
+          "n_signals": 0,
+          "n_evaluated_signals": 0,
+          "n_detected": 0,
+          "n_unique_detected_peaks": 0,
+          "n_false": 0,
+          "n_late": 0,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        },
+        "lower": {
+          "peaks_detected_pct": null,
+          "false_signal_pct": null,
+          "precision_pct": null,
+          "precision_excl_late_pct": null,
+          "n_peaks": 0,
+          "n_signals": 0,
+          "n_evaluated_signals": 0,
+          "n_detected": 0,
+          "n_unique_detected_peaks": 0,
+          "n_false": 0,
+          "n_late": 0,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        }
+      },
+      "after_warmup": {
+        "major": {
+          "peaks_detected_pct": null,
+          "false_signal_pct": null,
+          "precision_pct": null,
+          "precision_excl_late_pct": null,
+          "n_peaks": 0,
+          "n_signals": 0,
+          "n_evaluated_signals": 0,
+          "n_detected": 0,
+          "n_unique_detected_peaks": 0,
+          "n_false": 0,
+          "n_late": 0,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        },
+        "lower": {
+          "peaks_detected_pct": null,
+          "false_signal_pct": null,
+          "precision_pct": null,
+          "precision_excl_late_pct": null,
+          "n_peaks": 0,
+          "n_signals": 0,
+          "n_evaluated_signals": 0,
+          "n_detected": 0,
+          "n_unique_detected_peaks": 0,
+          "n_false": 0,
+          "n_late": 0,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        }
+      },
+      "endpoint_censored": {
+        "major": {
+          "peaks_detected_pct": null,
+          "false_signal_pct": null,
+          "precision_pct": null,
+          "precision_excl_late_pct": null,
+          "n_peaks": 0,
+          "n_signals": 0,
+          "n_evaluated_signals": 0,
+          "n_detected": 0,
+          "n_unique_detected_peaks": 0,
+          "n_false": 0,
+          "n_late": 0,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        },
+        "lower": {
+          "peaks_detected_pct": null,
+          "false_signal_pct": null,
+          "precision_pct": null,
+          "precision_excl_late_pct": null,
+          "n_peaks": 0,
+          "n_signals": 0,
+          "n_evaluated_signals": 0,
+          "n_detected": 0,
+          "n_unique_detected_peaks": 0,
+          "n_false": 0,
+          "n_late": 0,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        }
+      },
+      "out_of_sample": {
+        "status": "not_configured",
+        "insample_end": null,
+        "metrics": {},
+        "note": "fixed thresholds; no fitting; retrospective labels and historical peak context retained"
+      },
+      "diagnostics": {
+        "eligible_warning_days": 2,
+        "days_above_threshold": 0,
+        "days_above_threshold_pct": 0.0,
+        "alarm_fraction": 0.0,
+        "n_episodes": 0,
+        "open_episodes_at_end": 0,
+        "episode_duration_observations": {
+          "count": 0,
+          "min": null,
+          "median": null,
+          "max": null
+        },
+        "useful_episode_lead_observations": {
+          "major": {
+            "count": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          },
+          "lower": {
+            "count": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "detected_event_first_lead_observations": {
+          "major": {
+            "count": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          },
+          "lower": {
+            "count": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          }
+        },
+        "calendar": "supplied observed sessions; no fill or calendar approximation",
+        "label_warning": "catalog is retrospective; these metrics do not establish prospective or trading performance"
+      },
+      "is_synthetic": false,
+      "data_provenance": {
+        "source": "local_csv",
+        "source_file": "portara_short.csv",
+        "source_file_sha256": "8224a32fd6283a0782aa298151d05f04d2120beeb2ebe9894135f12647e30525",
+        "date_column": "Date",
+        "high_column": "High",
+        "is_synthetic": false,
+        "index_identity": "asserted_by_input_owner",
+        "requested_start_inclusive": null,
+        "requested_end_inclusive": null,
+        "source_rows": 90,
+        "used_rows": 90,
+        "actual_start": "2026-05-04",
+        "actual_end": "2026-09-04",
+        "weekend_rows": 0,
+        "series_sha256": "73eb20ee7ccadfc72e35b16fca0764041baafe8baba744522b817d8b543f9f1b"
+      }
+    }
+  },
+  "interpretation": "reimplementation under declared assumptions; not proof of exact replication or trading profitability",
+  "baseline": {
+    "definition": "maximum squared value of the SAME causal envelope on retained operator coordinates",
+    "is_synthetic": false,
+    "data_provenance": {
+      "source": "local_csv",
+      "source_file": "portara_short.csv",
+      "source_file_sha256": "8224a32fd6283a0782aa298151d05f04d2120beeb2ebe9894135f12647e30525",
+      "date_column": "Date",
+      "high_column": "High",
+      "is_synthetic": false,
+      "index_identity": "asserted_by_input_owner",
+      "requested_start_inclusive": null,
+      "requested_end_inclusive": null,
+      "source_rows": 90,
+      "used_rows": 90,
+      "actual_start": "2026-05-04",
+      "actual_end": "2026-09-04",
+      "weekend_rows": 0,
+      "series_sha256": "73eb20ee7ccadfc72e35b16fca0764041baafe8baba744522b817d8b543f9f1b"
+    },
+    "daily_decisions": 2,
+    "disagreement_days": 0,
+    "max_abs_W_difference": 0.0,
+    "qca_only_episodes": [],
+    "baseline_only_episodes": [],
+    "label_catalogs": {
+      "own": {
+        "catalog": {
+          "source": "full_sample_retrospective",
+          "swh": 1.3803124945730474
+        },
+        "full_sample": {
+          "major": {
+            "peaks_detected_pct": null,
+            "false_signal_pct": null,
+            "precision_pct": null,
+            "precision_excl_late_pct": null,
+            "n_peaks": 0,
+            "n_signals": 0,
+            "n_evaluated_signals": 0,
+            "n_detected": 0,
+            "n_unique_detected_peaks": 0,
+            "n_false": 0,
+            "n_late": 0,
+            "n_low": 0,
+            "n_recovery": 0,
+            "n_censored": 0
+          },
+          "lower": {
+            "peaks_detected_pct": null,
+            "false_signal_pct": null,
+            "precision_pct": null,
+            "precision_excl_late_pct": null,
+            "n_peaks": 0,
+            "n_signals": 0,
+            "n_evaluated_signals": 0,
+            "n_detected": 0,
+            "n_unique_detected_peaks": 0,
+            "n_false": 0,
+            "n_late": 0,
+            "n_low": 0,
+            "n_recovery": 0,
+            "n_censored": 0
+          }
+        },
+        "after_warmup": {
+          "major": {
+            "peaks_detected_pct": null,
+            "false_signal_pct": null,
+            "precision_pct": null,
+            "precision_excl_late_pct": null,
+            "n_peaks": 0,
+            "n_signals": 0,
+            "n_evaluated_signals": 0,
+            "n_detected": 0,
+            "n_unique_detected_peaks": 0,
+            "n_false": 0,
+            "n_late": 0,
+            "n_low": 0,
+            "n_recovery": 0,
+            "n_censored": 0
+          },
+          "lower": {
+            "peaks_detected_pct": null,
+            "false_signal_pct": null,
+            "precision_pct": null,
+            "precision_excl_late_pct": null,
+            "n_peaks": 0,
+            "n_signals": 0,
+            "n_evaluated_signals": 0,
+            "n_detected": 0,
+            "n_unique_detected_peaks": 0,
+            "n_false": 0,
+            "n_late": 0,
+            "n_low": 0,
+            "n_recovery": 0,
+            "n_censored": 0
+          }
+        },
+        "endpoint_censored": {
+          "major": {
+            "peaks_detected_pct": null,
+            "false_signal_pct": null,
+            "precision_pct": null,
+            "precision_excl_late_pct": null,
+            "n_peaks": 0,
+            "n_signals": 0,
+            "n_evaluated_signals": 0,
+            "n_detected": 0,
+            "n_unique_detected_peaks": 0,
+            "n_false": 0,
+            "n_late": 0,
+            "n_low": 0,
+            "n_recovery": 0,
+            "n_censored": 0
+          },
+          "lower": {
+            "peaks_detected_pct": null,
+            "false_signal_pct": null,
+            "precision_pct": null,
+            "precision_excl_late_pct": null,
+            "n_peaks": 0,
+            "n_signals": 0,
+            "n_evaluated_signals": 0,
+            "n_detected": 0,
+            "n_unique_detected_peaks": 0,
+            "n_false": 0,
+            "n_late": 0,
+            "n_low": 0,
+            "n_recovery": 0,
+            "n_censored": 0
+          }
+        },
+        "out_of_sample": {
+          "status": "not_configured",
+          "insample_end": null,
+          "metrics": {},
+          "note": "fixed thresholds; no fitting; retrospective labels and historical peak context retained"
+        },
+        "diagnostics": {
+          "eligible_warning_days": 2,
+          "days_above_threshold": 0,
+          "days_above_threshold_pct": 0.0,
+          "alarm_fraction": 0.0,
+          "n_episodes": 0,
+          "open_episodes_at_end": 0,
+          "episode_duration_observations": {
+            "count": 0,
+            "min": null,
+            "median": null,
+            "max": null
+          },
+          "useful_episode_lead_observations": {
+            "major": {
+              "count": 0,
+              "min": null,
+              "median": null,
+              "max": null
+            },
+            "lower": {
+              "count": 0,
+              "min": null,
+              "median": null,
+              "max": null
+            }
+          },
+          "detected_event_first_lead_observations": {
+            "major": {
+              "count": 0,
+              "min": null,
+              "median": null,
+              "max": null
+            },
+            "lower": {
+              "count": 0,
+              "min": null,
+              "median": null,
+              "max": null
+            }
+          },
+          "calendar": "supplied observed sessions; no fill or calendar approximation",
+          "label_warning": "catalog is retrospective; these metrics do not establish prospective or trading performance"
+        },
+        "is_synthetic": false,
+        "data_provenance": {
+          "source": "local_csv",
+          "source_file": "portara_short.csv",
+          "source_file_sha256": "8224a32fd6283a0782aa298151d05f04d2120beeb2ebe9894135f12647e30525",
+          "date_column": "Date",
+          "high_column": "High",
+          "is_synthetic": false,
+          "index_identity": "asserted_by_input_owner",
+          "requested_start_inclusive": null,
+          "requested_end_inclusive": null,
+          "source_rows": 90,
+          "used_rows": 90,
+          "actual_start": "2026-05-04",
+          "actual_end": "2026-09-04",
+          "weekend_rows": 0,
+          "series_sha256": "73eb20ee7ccadfc72e35b16fca0764041baafe8baba744522b817d8b543f9f1b"
+        }
+      }
+    }
+  }
+}

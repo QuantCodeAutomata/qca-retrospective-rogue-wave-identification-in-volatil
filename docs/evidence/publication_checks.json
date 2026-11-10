@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "recorded_source_hashes_checked": 940,
+  "published_output_hashes_checked": 592,
+  "independently_recounted_major_catalog_evaluations": 76,
+  "qca_vs_baseline_rows_including_overlapping_runs": 91944,
+  "binary_decision_disagreements": 0,
+  "local_markdown_links_checked": true,
+  "license_unchanged": true,
+  "errors": [],
+  "broken_links": [],
+  "sensitive_path_or_credential_findings": [],
+  "pytest": {
+    "passed": 216,
+    "environment": "Python 3.12.10 with constraints-validated.txt",
+    "elapsed_seconds": 3.87
+  },
+  "scope": "Publication checks plus exact source matches to 20 saved runs; no new fitting or full recomputation of these historical runs."
+}

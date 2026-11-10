@@ -1,0 +1,80 @@
+{
+  "runs": [
+    {
+      "id": "dag_full_spectral_peaks",
+      "passed": true,
+      "comparisons": 23788
+    },
+    {
+      "id": "dag_full_all_bins",
+      "passed": true,
+      "comparisons": 23912
+    },
+    {
+      "id": "investing_full_spectral_peaks",
+      "passed": true,
+      "comparisons": 20784
+    },
+    {
+      "id": "investing_full_all_bins",
+      "passed": true,
+      "comparisons": 20896
+    },
+    {
+      "id": "dag_common_spectral_peaks",
+      "passed": true,
+      "comparisons": 20345
+    },
+    {
+      "id": "dag_common_all_bins",
+      "passed": true,
+      "comparisons": 20269
+    },
+    {
+      "id": "investing_common_spectral_peaks",
+      "passed": true,
+      "comparisons": 20345
+    },
+    {
+      "id": "investing_common_all_bins",
+      "passed": true,
+      "comparisons": 20269
+    },
+    {
+      "id": "investing_calendar_spectral_peaks",
+      "passed": true,
+      "comparisons": 20831
+    },
+    {
+      "id": "investing_calendar_all_bins",
+      "passed": true,
+      "comparisons": 20755
+    },
+    {
+      "id": "portara_short_spectral_peaks",
+      "passed": true,
+      "comparisons": 1077
+    },
+    {
+      "id": "portara_short_all_bins",
+      "passed": true,
+      "comparisons": 1077
+    },
+    {
+      "id": "dag_ghost_spectral_peaks",
+      "passed": true,
+      "comparisons": 23571
+    },
+    {
+      "id": "dag_ghost_all_bins",
+      "passed": true,
+      "comparisons": 23995
+    }
+  ],
+  "passed": true,
+  "independent_comparisons": 261914,
+  "independent_correlation_lags": 854,
+  "max_correlation_error": 5.551115123125783e-16,
+  "baseline_decisions_including_overlapping_scenarios": 38036,
+  "baseline_disagreement_days": 0
+}

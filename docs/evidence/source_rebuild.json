@@ -1,0 +1,14 @@
+{
+  "vix_vxo_normalized_exact_sha256": true,
+  "vstoxx_qc_rebuilt_exact_sha256": true,
+  "vstoxx_all_six_inputs_rebuilt": true,
+  "dates_absent_in_comparison_close": [
+    "2019-04-19",
+    "2021-12-31",
+    "2022-04-15",
+    "2023-04-07",
+    "2024-03-29",
+    "2024-05-01"
+  ],
+  "calendar_note": "Missing Close record does not prove absence of an index session."
+}

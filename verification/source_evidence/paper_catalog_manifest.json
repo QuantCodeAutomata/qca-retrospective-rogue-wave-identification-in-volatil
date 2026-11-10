@@ -1,0 +1,39 @@
+{
+  "paper": "arXiv:2606.31475v4",
+  "paper_pdf_sha256": "7e2ed7488fc993153404622d83c8e6ccd76eb41e701b76b5b34116b7349cf412",
+  "reference_kind": "Published retrospective event dates; not prospective ground truth",
+  "provenance": "Unchanged tables from reviewed upload; original audit checked all 90 transcribed rows against the supplied PDF. Counts here describe the catalog, not replication performance.",
+  "precision_warning": "Redundant category flags in supplementary tables are incomplete; do not derive published precision by subtracting them.",
+  "catalogs": [
+    {
+      "index": "VIX",
+      "supplementary_table": "S1",
+      "source_file": "paper_VIX_supplement_table.csv",
+      "sha256": "a4a8ac7f1bb7353e399645a28fd0911533b1c65f8b0cd8246ff99b502a2325fd",
+      "rows": 32,
+      "major_events": 12,
+      "major_and_lower_events": 15,
+      "unchanged_from_reviewed_upload": true
+    },
+    {
+      "index": "VXO",
+      "supplementary_table": "S2",
+      "source_file": "paper_VXO_supplement_table.csv",
+      "sha256": "80bfb2d2d9f50e3f8036e41abff34897164f270291bc91a49ce6ab0ed57c2d24",
+      "rows": 32,
+      "major_events": 8,
+      "major_and_lower_events": 13,
+      "unchanged_from_reviewed_upload": true
+    },
+    {
+      "index": "VSTOXX",
+      "supplementary_table": "S3",
+      "source_file": "paper_VSTOXX_supplement_table.csv",
+      "sha256": "575bf265fd5b618241a6fb4bab528adc344509019b8fc1bbc2f0e609dede2c51",
+      "rows": 26,
+      "major_events": 8,
+      "major_and_lower_events": 9,
+      "unchanged_from_reviewed_upload": true
+    }
+  ]
+}

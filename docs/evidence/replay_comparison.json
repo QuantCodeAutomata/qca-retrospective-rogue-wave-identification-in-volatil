@@ -1,0 +1,132 @@
+{
+  "passed": true,
+  "runs": [
+    {
+      "id": "dag_full_spectral_peaks",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 419,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 7
+    },
+    {
+      "id": "dag_full_all_bins",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 411,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 7
+    },
+    {
+      "id": "investing_full_spectral_peaks",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 449,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 7
+    },
+    {
+      "id": "investing_full_all_bins",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 405,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 7
+    },
+    {
+      "id": "dag_common_spectral_peaks",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 430,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 6
+    },
+    {
+      "id": "dag_common_all_bins",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 394,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 6
+    },
+    {
+      "id": "investing_common_spectral_peaks",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 436,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 6
+    },
+    {
+      "id": "investing_common_all_bins",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 392,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 6
+    },
+    {
+      "id": "investing_calendar_spectral_peaks",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 449,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 6
+    },
+    {
+      "id": "investing_calendar_all_bins",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 395,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 6
+    },
+    {
+      "id": "portara_short_spectral_peaks",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 0,
+      "unchanged_event_episode_tables": 17,
+      "unchanged_metrics_json_files": 4
+    },
+    {
+      "id": "portara_short_all_bins",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 0,
+      "unchanged_event_episode_tables": 17,
+      "unchanged_metrics_json_files": 4
+    },
+    {
+      "id": "dag_ghost_spectral_peaks",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 416,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 6
+    },
+    {
+      "id": "dag_ghost_all_bins",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 420,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 6
+    },
+    {
+      "id": "vix_2025_default",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 1241,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 7
+    },
+    {
+      "id": "vix_2025_all_bins",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 1202,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 7
+    },
+    {
+      "id": "vxo_2020_default",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 1165,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 7
+    },
+    {
+      "id": "vxo_2020_all_bins",
+      "passed": true,
+      "changed_inactive_location_rows_across_warning_files": 968,
+      "unchanged_event_episode_tables": 33,
+      "unchanged_metrics_json_files": 7
+    }
+  ],
+  "note": "Location row counts include duplicate QCA/baseline warning exports, not independent dates."
+}

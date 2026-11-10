@@ -1,0 +1,419 @@
+{
+  "definition": "maximum squared value of the SAME causal envelope on retained operator coordinates",
+  "is_synthetic": false,
+  "data_provenance": {
+    "source": "local_csv",
+    "source_file": "investing_common.csv",
+    "source_file_sha256": "61d40bbf62c403847f49b159ed8d8d164b0f10cd02527dc675fcf5b75ba91d5c",
+    "date_column": "Date",
+    "high_column": "High",
+    "is_synthetic": false,
+    "index_identity": "asserted_by_input_owner",
+    "requested_start_inclusive": null,
+    "requested_end_inclusive": null,
+    "source_rows": 3032,
+    "used_rows": 3032,
+    "actual_start": "2012-12-28",
+    "actual_end": "2024-11-22",
+    "weekend_rows": 0,
+    "series_sha256": "4aff18e521574eb271a3da595d51020a2d9cc5c79d0407d7ecb240155184550b"
+  },
+  "daily_decisions": 2944,
+  "disagreement_days": 0,
+  "max_abs_W_difference": 0.4000445107263886,
+  "qca_only_episodes": [],
+  "baseline_only_episodes": [],
+  "label_catalogs": {
+    "own": {
+      "catalog": {
+        "source": "full_sample_retrospective",
+        "swh": 10.946998473726017
+      },
+      "full_sample": {
+        "major": {
+          "peaks_detected_pct": 100.0,
+          "false_signal_pct": 20.0,
+          "precision_pct": 40.0,
+          "precision_excl_late_pct": 40.0,
+          "n_peaks": 2,
+          "n_signals": 5,
+          "n_evaluated_signals": 5,
+          "n_detected": 2,
+          "n_unique_detected_peaks": 2,
+          "n_false": 1,
+          "n_late": 0,
+          "n_low": 2,
+          "n_recovery": 0,
+          "n_censored": 0
+        },
+        "lower": {
+          "peaks_detected_pct": 100.0,
+          "false_signal_pct": 20.0,
+          "precision_pct": 60.0,
+          "precision_excl_late_pct": 75.0,
+          "n_peaks": 3,
+          "n_signals": 5,
+          "n_evaluated_signals": 5,
+          "n_detected": 3,
+          "n_unique_detected_peaks": 3,
+          "n_false": 1,
+          "n_late": 1,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        }
+      },
+      "after_warmup": {
+        "major": {
+          "peaks_detected_pct": 100.0,
+          "false_signal_pct": 20.0,
+          "precision_pct": 40.0,
+          "precision_excl_late_pct": 40.0,
+          "n_peaks": 2,
+          "n_signals": 5,
+          "n_evaluated_signals": 5,
+          "n_detected": 2,
+          "n_unique_detected_peaks": 2,
+          "n_false": 1,
+          "n_late": 0,
+          "n_low": 2,
+          "n_recovery": 0,
+          "n_censored": 0
+        },
+        "lower": {
+          "peaks_detected_pct": 100.0,
+          "false_signal_pct": 20.0,
+          "precision_pct": 60.0,
+          "precision_excl_late_pct": 75.0,
+          "n_peaks": 3,
+          "n_signals": 5,
+          "n_evaluated_signals": 5,
+          "n_detected": 3,
+          "n_unique_detected_peaks": 3,
+          "n_false": 1,
+          "n_late": 1,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        }
+      },
+      "endpoint_censored": {
+        "major": {
+          "peaks_detected_pct": 100.0,
+          "false_signal_pct": 20.0,
+          "precision_pct": 40.0,
+          "precision_excl_late_pct": 40.0,
+          "n_peaks": 2,
+          "n_signals": 5,
+          "n_evaluated_signals": 5,
+          "n_detected": 2,
+          "n_unique_detected_peaks": 2,
+          "n_false": 1,
+          "n_late": 0,
+          "n_low": 2,
+          "n_recovery": 0,
+          "n_censored": 0
+        },
+        "lower": {
+          "peaks_detected_pct": 100.0,
+          "false_signal_pct": 20.0,
+          "precision_pct": 60.0,
+          "precision_excl_late_pct": 75.0,
+          "n_peaks": 3,
+          "n_signals": 5,
+          "n_evaluated_signals": 5,
+          "n_detected": 3,
+          "n_unique_detected_peaks": 3,
+          "n_false": 1,
+          "n_late": 1,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        }
+      },
+      "out_of_sample": {
+        "status": "not_configured",
+        "insample_end": null,
+        "metrics": {},
+        "note": "fixed thresholds; no fitting; retrospective labels and historical peak context retained"
+      },
+      "diagnostics": {
+        "eligible_warning_days": 2944,
+        "days_above_threshold": 40,
+        "days_above_threshold_pct": 1.358695652173913,
+        "alarm_fraction": 0.01358695652173913,
+        "n_episodes": 5,
+        "open_episodes_at_end": 0,
+        "episode_duration_observations": {
+          "count": 5,
+          "min": 2.0,
+          "median": 4.0,
+          "max": 20.0
+        },
+        "useful_episode_lead_observations": {
+          "major": {
+            "count": 2,
+            "min": 4.0,
+            "median": 7.5,
+            "max": 11.0
+          },
+          "lower": {
+            "count": 3,
+            "min": 4.0,
+            "median": 11.0,
+            "max": 209.0
+          }
+        },
+        "detected_event_first_lead_observations": {
+          "major": {
+            "count": 2,
+            "min": 4.0,
+            "median": 7.5,
+            "max": 11.0
+          },
+          "lower": {
+            "count": 3,
+            "min": 4.0,
+            "median": 11.0,
+            "max": 209.0
+          }
+        },
+        "calendar": "supplied observed sessions; no fill or calendar approximation",
+        "label_warning": "catalog is retrospective; these metrics do not establish prospective or trading performance"
+      },
+      "is_synthetic": false,
+      "data_provenance": {
+        "source": "local_csv",
+        "source_file": "investing_common.csv",
+        "source_file_sha256": "61d40bbf62c403847f49b159ed8d8d164b0f10cd02527dc675fcf5b75ba91d5c",
+        "date_column": "Date",
+        "high_column": "High",
+        "is_synthetic": false,
+        "index_identity": "asserted_by_input_owner",
+        "requested_start_inclusive": null,
+        "requested_end_inclusive": null,
+        "source_rows": 3032,
+        "used_rows": 3032,
+        "actual_start": "2012-12-28",
+        "actual_end": "2024-11-22",
+        "weekend_rows": 0,
+        "series_sha256": "4aff18e521574eb271a3da595d51020a2d9cc5c79d0407d7ecb240155184550b"
+      }
+    },
+    "paper": {
+      "catalog": {
+        "index": "VSTOXX",
+        "catalog": "paper_supplementary_events",
+        "source_file": "verification/source_evidence/paper_VSTOXX_supplement_table.csv",
+        "source_sha256": "575bf265fd5b618241a6fb4bab528adc344509019b8fc1bbc2f0e609dede2c51",
+        "paper": "arXiv:2606.31475v4",
+        "supplementary_table": "S3",
+        "reference_kind": "fixed retrospective paper catalog; not independent prospective labels",
+        "calendar_start": "2012-12-28",
+        "calendar_end": "2024-11-22",
+        "total_events": 9,
+        "covered_events": 3,
+        "covered_major_events": 3,
+        "covered_lower_events": 0,
+        "coverage_complete": false,
+        "out_of_range_events": [
+          {
+            "date": "2001-09-19",
+            "severity": "major"
+          },
+          {
+            "date": "2002-10-02",
+            "severity": "major"
+          },
+          {
+            "date": "2008-10-14",
+            "severity": "major"
+          },
+          {
+            "date": "2010-05-20",
+            "severity": "major"
+          },
+          {
+            "date": "2011-09-12",
+            "severity": "major"
+          },
+          {
+            "date": "2025-04-09",
+            "severity": "lower"
+          }
+        ],
+        "missing_in_range_dates": []
+      },
+      "full_sample": {
+        "major": {
+          "peaks_detected_pct": 100.0,
+          "false_signal_pct": 20.0,
+          "precision_pct": 60.0,
+          "precision_excl_late_pct": 75.0,
+          "n_peaks": 3,
+          "n_signals": 5,
+          "n_evaluated_signals": 5,
+          "n_detected": 3,
+          "n_unique_detected_peaks": 3,
+          "n_false": 1,
+          "n_late": 1,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        },
+        "lower": {
+          "peaks_detected_pct": 100.0,
+          "false_signal_pct": 20.0,
+          "precision_pct": 60.0,
+          "precision_excl_late_pct": 75.0,
+          "n_peaks": 3,
+          "n_signals": 5,
+          "n_evaluated_signals": 5,
+          "n_detected": 3,
+          "n_unique_detected_peaks": 3,
+          "n_false": 1,
+          "n_late": 1,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        }
+      },
+      "after_warmup": {
+        "major": {
+          "peaks_detected_pct": 100.0,
+          "false_signal_pct": 20.0,
+          "precision_pct": 60.0,
+          "precision_excl_late_pct": 75.0,
+          "n_peaks": 3,
+          "n_signals": 5,
+          "n_evaluated_signals": 5,
+          "n_detected": 3,
+          "n_unique_detected_peaks": 3,
+          "n_false": 1,
+          "n_late": 1,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        },
+        "lower": {
+          "peaks_detected_pct": 100.0,
+          "false_signal_pct": 20.0,
+          "precision_pct": 60.0,
+          "precision_excl_late_pct": 75.0,
+          "n_peaks": 3,
+          "n_signals": 5,
+          "n_evaluated_signals": 5,
+          "n_detected": 3,
+          "n_unique_detected_peaks": 3,
+          "n_false": 1,
+          "n_late": 1,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        }
+      },
+      "endpoint_censored": {
+        "major": {
+          "peaks_detected_pct": 100.0,
+          "false_signal_pct": 20.0,
+          "precision_pct": 60.0,
+          "precision_excl_late_pct": 75.0,
+          "n_peaks": 3,
+          "n_signals": 5,
+          "n_evaluated_signals": 5,
+          "n_detected": 3,
+          "n_unique_detected_peaks": 3,
+          "n_false": 1,
+          "n_late": 1,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        },
+        "lower": {
+          "peaks_detected_pct": 100.0,
+          "false_signal_pct": 20.0,
+          "precision_pct": 60.0,
+          "precision_excl_late_pct": 75.0,
+          "n_peaks": 3,
+          "n_signals": 5,
+          "n_evaluated_signals": 5,
+          "n_detected": 3,
+          "n_unique_detected_peaks": 3,
+          "n_false": 1,
+          "n_late": 1,
+          "n_low": 0,
+          "n_recovery": 0,
+          "n_censored": 0
+        }
+      },
+      "out_of_sample": {
+        "status": "not_configured",
+        "insample_end": null,
+        "metrics": {},
+        "note": "fixed thresholds; no fitting; retrospective labels and historical peak context retained"
+      },
+      "diagnostics": {
+        "eligible_warning_days": 2944,
+        "days_above_threshold": 40,
+        "days_above_threshold_pct": 1.358695652173913,
+        "alarm_fraction": 0.01358695652173913,
+        "n_episodes": 5,
+        "open_episodes_at_end": 0,
+        "episode_duration_observations": {
+          "count": 5,
+          "min": 2.0,
+          "median": 4.0,
+          "max": 20.0
+        },
+        "useful_episode_lead_observations": {
+          "major": {
+            "count": 3,
+            "min": 5.0,
+            "median": 11.0,
+            "max": 208.0
+          },
+          "lower": {
+            "count": 3,
+            "min": 5.0,
+            "median": 11.0,
+            "max": 208.0
+          }
+        },
+        "detected_event_first_lead_observations": {
+          "major": {
+            "count": 3,
+            "min": 5.0,
+            "median": 11.0,
+            "max": 208.0
+          },
+          "lower": {
+            "count": 3,
+            "min": 5.0,
+            "median": 11.0,
+            "max": 208.0
+          }
+        },
+        "calendar": "supplied observed sessions; no fill or calendar approximation",
+        "label_warning": "catalog is retrospective; these metrics do not establish prospective or trading performance"
+      },
+      "is_synthetic": false,
+      "data_provenance": {
+        "source": "local_csv",
+        "source_file": "investing_common.csv",
+        "source_file_sha256": "61d40bbf62c403847f49b159ed8d8d164b0f10cd02527dc675fcf5b75ba91d5c",
+        "date_column": "Date",
+        "high_column": "High",
+        "is_synthetic": false,
+        "index_identity": "asserted_by_input_owner",
+        "requested_start_inclusive": null,
+        "requested_end_inclusive": null,
+        "source_rows": 3032,
+        "used_rows": 3032,
+        "actual_start": "2012-12-28",
+        "actual_end": "2024-11-22",
+        "weekend_rows": 0,
+        "series_sha256": "4aff18e521574eb271a3da595d51020a2d9cc5c79d0407d7ecb240155184550b"
+      }
+    }
+  }
+}
