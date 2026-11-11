@@ -1,0 +1,497 @@
+[
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?CIF_Check=true&DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=10.11.2026&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:35.030130+00:00",
+    "raw_file": "through_2026-11-10.csv",
+    "sha256": "5d0dc75041b3f4164bf29b18cd0cf1031915b7f760b794a3559a75285dc61d64",
+    "first": "2026-06-24",
+    "last": "2026-11-10",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=23.06.2026&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:35.900898+00:00",
+    "raw_file": "through_2026-06-23.csv",
+    "sha256": "f7497151e5e28a2c210c92403aa78b123643013945a54ae8bd9f764c46e36d10",
+    "first": "2026-01-30",
+    "last": "2026-06-23",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=29.01.2026&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:36.717441+00:00",
+    "raw_file": "through_2026-01-29.csv",
+    "sha256": "ece1fa91c376aea61ecfe1e1b93f5c8bb6c9a2a1f8e64c078ef26adfb526c7bb",
+    "first": "2025-09-05",
+    "last": "2026-01-29",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=04.09.2025&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:37.601007+00:00",
+    "raw_file": "through_2025-09-04.csv",
+    "sha256": "5a02ef2426a8adbceb8cfb922db97f45feea3cdbb02f41beae3a208e4616ea56",
+    "first": "2025-04-15",
+    "last": "2025-09-04",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=14.04.2025&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:38.411518+00:00",
+    "raw_file": "through_2025-04-14.csv",
+    "sha256": "8114454bd173be222383d169ba1d2cdc47e92f18b68f4f8c59fb4ebac94bff3d",
+    "first": "2024-11-19",
+    "last": "2025-04-14",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=18.11.2024&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:39.234194+00:00",
+    "raw_file": "through_2024-11-18.csv",
+    "sha256": "e0a6605366c2690ce96cdc1ed71a29b6144438edabc86449f572890b0ddf12c8",
+    "first": "2024-07-02",
+    "last": "2024-11-18",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=01.07.2024&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:40.042988+00:00",
+    "raw_file": "through_2024-07-01.csv",
+    "sha256": "bd94c9bc2bfb8ae01830f7e67ac3345ac828a58dcdc57dd69815a14c0e949fab",
+    "first": "2024-02-08",
+    "last": "2024-07-01",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=07.02.2024&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:40.856434+00:00",
+    "raw_file": "through_2024-02-07.csv",
+    "sha256": "b046b7363d26d5d45d6427c6202739003be8cb66767e38656db1afd9e9898abc",
+    "first": "2023-09-18",
+    "last": "2024-02-07",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=17.09.2023&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:41.667032+00:00",
+    "raw_file": "through_2023-09-17.csv",
+    "sha256": "06a2e7742ff44c2d1c8bb587ba3de37d872a1a7fa510f9164102301abf3a32de",
+    "first": "2023-04-28",
+    "last": "2023-09-15",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=27.04.2023&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:42.487916+00:00",
+    "raw_file": "through_2023-04-27.csv",
+    "sha256": "31518a574000b5a5ee1f761f349f863b86e91c61f83e3766b87b7517b0547f66",
+    "first": "2022-12-06",
+    "last": "2023-04-27",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=05.12.2022&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:43.372889+00:00",
+    "raw_file": "through_2022-12-05.csv",
+    "sha256": "34a5d90e05768ad52806df4838f6c3206c8d1a17aadd85cfd46c69723229dd27",
+    "first": "2022-07-19",
+    "last": "2022-12-05",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=18.07.2022&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:44.185863+00:00",
+    "raw_file": "through_2022-07-18.csv",
+    "sha256": "bf7bdb291f4cd298780af51f6350a967d009bae65358d7cdebdc7ebf69d5e6ee",
+    "first": "2022-02-24",
+    "last": "2022-07-18",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=23.02.2022&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:44.994321+00:00",
+    "raw_file": "through_2022-02-23.csv",
+    "sha256": "4c57098e9ad59b40429ea26f4a95956b2c612f13cee6ecbd73d9d68e2cdec83d",
+    "first": "2021-10-05",
+    "last": "2022-02-23",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=04.10.2021&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:45.806707+00:00",
+    "raw_file": "through_2021-10-04.csv",
+    "sha256": "4a23d75da745835133461640e61f635cd3ddd4917fe92a182efd6f5707ab2f74",
+    "first": "2021-05-18",
+    "last": "2021-10-04",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=17.05.2021&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:46.616958+00:00",
+    "raw_file": "through_2021-05-17.csv",
+    "sha256": "41daad46f5740a5058ff3b7850a8ff4573b84b40109af38fb3d4b94895e90531",
+    "first": "2020-12-21",
+    "last": "2021-05-17",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=20.12.2020&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:47.437249+00:00",
+    "raw_file": "through_2020-12-20.csv",
+    "sha256": "12289acc493368b84286155e82333c39197f21231741c4fcbad26268a03d96e0",
+    "first": "2020-08-03",
+    "last": "2020-12-18",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=02.08.2020&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:48.250049+00:00",
+    "raw_file": "through_2020-08-02.csv",
+    "sha256": "1ca8ead678be4739d1f361ca59cbafd51fc436b5571069b448e40fd6732afbcb",
+    "first": "2020-03-11",
+    "last": "2020-07-31",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=10.03.2020&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:49.135852+00:00",
+    "raw_file": "through_2020-03-10.csv",
+    "sha256": "7db7e65b3cab2a645366198ef4cdf683ff0aad9d5e064e26c9389263cd601010",
+    "first": "2019-10-16",
+    "last": "2020-03-10",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=15.10.2019&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:49.951514+00:00",
+    "raw_file": "through_2019-10-15.csv",
+    "sha256": "1c0caa0ec635a6e41d26814d8f39a4de38dc3d81a9b5613cb94f9cd6020bfc00",
+    "first": "2019-05-16",
+    "last": "2019-10-15",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=15.05.2019&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:50.766170+00:00",
+    "raw_file": "through_2019-05-15.csv",
+    "sha256": "a35ea17b326021100963b2bf42f152a9a64e2f22c9aea680aec3500854502966",
+    "first": "2018-12-17",
+    "last": "2019-05-15",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=16.12.2018&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:51.609578+00:00",
+    "raw_file": "through_2018-12-16.csv",
+    "sha256": "7f5c09c7d05f480db22658b099dd7f22d2ed6371f070b1b4bf585fdb1b91ab19",
+    "first": "2018-07-30",
+    "last": "2018-12-14",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=29.07.2018&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:52.433455+00:00",
+    "raw_file": "through_2018-07-29.csv",
+    "sha256": "4688ba1301c957695ae92d0bd4d3c11c8add3e67c192f13870ee71eb8ecb5596",
+    "first": "2018-03-06",
+    "last": "2018-07-27",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=05.03.2018&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:53.331283+00:00",
+    "raw_file": "through_2018-03-05.csv",
+    "sha256": "5e97272892286983f1d47eb1816d1816699671884d0f175105ebb9eb763aaeca",
+    "first": "2017-10-11",
+    "last": "2018-03-05",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=10.10.2017&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:54.152679+00:00",
+    "raw_file": "through_2017-10-10.csv",
+    "sha256": "45fb9a0bbd747759c49e4b40dc8177610ef813ffbd39ed4b2a40f97fab118159",
+    "first": "2017-05-17",
+    "last": "2017-10-10",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=16.05.2017&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:54.965889+00:00",
+    "raw_file": "through_2017-05-16.csv",
+    "sha256": "9a258d107e85007b618b99657e893cb5c9a5050d4633f7e9b4b9636f524ede7c",
+    "first": "2016-12-22",
+    "last": "2017-05-16",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=21.12.2016&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:55.790360+00:00",
+    "raw_file": "through_2016-12-21.csv",
+    "sha256": "7f2efa78ee7bc00dfc0aae47bfc36207dc029c04ebcab4914f28c117807fc665",
+    "first": "2016-08-04",
+    "last": "2016-12-21",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=03.08.2016&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:56.606908+00:00",
+    "raw_file": "through_2016-08-03.csv",
+    "sha256": "3fafef9ecba923543994dca4bf641ac261cf64fbfe53abb4a87a2ba2338e0e65",
+    "first": "2016-03-15",
+    "last": "2016-08-03",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=14.03.2016&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:57.425087+00:00",
+    "raw_file": "through_2016-03-14.csv",
+    "sha256": "e6be1c11e56169e2155426c70199d111a51ac17153845725033b9755fa456f3f",
+    "first": "2015-10-21",
+    "last": "2016-03-14",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=20.10.2015&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:58.245609+00:00",
+    "raw_file": "through_2015-10-20.csv",
+    "sha256": "01dcd28d7f2c53291b1fbe99f9bc26ba6fe95d34b8483897c2cde8ba5c5f0c19",
+    "first": "2015-06-02",
+    "last": "2015-10-20",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=01.06.2015&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:59.149136+00:00",
+    "raw_file": "through_2015-06-01.csv",
+    "sha256": "b03595bfbb10f07f90e4da583714b648cc4a97919f54de73bb8afefd4882b135",
+    "first": "2015-01-05",
+    "last": "2015-06-01",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=04.01.2015&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:55:59.960813+00:00",
+    "raw_file": "through_2015-01-04.csv",
+    "sha256": "0fedac84d0d9c02ce4625b0ecb7b6b76cfea172a5dac1efc2f27a0de06555d60",
+    "first": "2014-08-11",
+    "last": "2015-01-02",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=10.08.2014&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:00.773599+00:00",
+    "raw_file": "through_2014-08-10.csv",
+    "sha256": "2f089eaea83f64bf686f31e76ba01799f9997965a75434586979744329710918",
+    "first": "2014-03-18",
+    "last": "2014-08-08",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=17.03.2014&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:01.582443+00:00",
+    "raw_file": "through_2014-03-17.csv",
+    "sha256": "1856d36a69ffcfc444b905e11de5c43b9533d638b748d58014582a98f064c901",
+    "first": "2013-10-22",
+    "last": "2014-03-17",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=21.10.2013&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:02.402263+00:00",
+    "raw_file": "through_2013-10-21.csv",
+    "sha256": "e20a63eb4b1ae3384eb9a0529173d5013647b7667d5e9d4d3aa19ec09945ddae",
+    "first": "2013-06-04",
+    "last": "2013-10-21",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=03.06.2013&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:03.365398+00:00",
+    "raw_file": "through_2013-06-03.csv",
+    "sha256": "0d96b3ea90cb6f8040c7f13be521238cbb45c52830953956da4f9ae66d8d5c78",
+    "first": "2013-01-10",
+    "last": "2013-06-03",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=09.01.2013&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:04.185805+00:00",
+    "raw_file": "through_2013-01-09.csv",
+    "sha256": "0e9c26374a6f84d46a02b0bada53aa8bb4767c06c26e0b68dbcf19f5d627c260",
+    "first": "2012-08-16",
+    "last": "2013-01-09",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=15.08.2012&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:04.991894+00:00",
+    "raw_file": "through_2012-08-15.csv",
+    "sha256": "b98e56981fb1ee030e090abffda24c41a7390ea6495f1aa59ee59ae141d25438",
+    "first": "2012-03-26",
+    "last": "2012-08-15",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=25.03.2012&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:05.804518+00:00",
+    "raw_file": "through_2012-03-25.csv",
+    "sha256": "12706e69f4a99c1f5bc51db802e3716d60214b383d35076d8e21776f01ddcc8b",
+    "first": "2011-11-04",
+    "last": "2012-03-23",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=03.11.2011&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:06.621455+00:00",
+    "raw_file": "through_2011-11-03.csv",
+    "sha256": "722cb9de5e95173ff902a4b1d3969c4e8f9395a447fa769e9f60be8c2fc06440",
+    "first": "2011-06-17",
+    "last": "2011-11-03",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=16.06.2011&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:07.512201+00:00",
+    "raw_file": "through_2011-06-16.csv",
+    "sha256": "ed1fd733606ededc9a50e9b840babbe9841fbe307533d484e9b9659551bbbbe8",
+    "first": "2011-01-25",
+    "last": "2011-06-16",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=24.01.2011&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:08.382075+00:00",
+    "raw_file": "through_2011-01-24.csv",
+    "sha256": "4127576d5dac1a4a2ca18759039bbf522924f29f16e3c7b36d2552ae5375a9d9",
+    "first": "2010-09-03",
+    "last": "2011-01-24",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=02.09.2010&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:09.201894+00:00",
+    "raw_file": "through_2010-09-02.csv",
+    "sha256": "de17e57a12b0478fd90a2b6197b2f8f229e8cb74dc2bb7d50e86fc7c3af20f29",
+    "first": "2010-04-16",
+    "last": "2010-09-02",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=15.04.2010&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:10.020008+00:00",
+    "raw_file": "through_2010-04-15.csv",
+    "sha256": "25137e5be8e7bcd1cbfd867794198c224360b6afc3216c92e5f8b6cb6fe1d180",
+    "first": "2009-11-19",
+    "last": "2010-04-15",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=18.11.2009&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:10.843045+00:00",
+    "raw_file": "through_2009-11-18.csv",
+    "sha256": "922cab1c994cdd654cfa23f10afc83e311327e872533f7faee3d70cbfb9bae40",
+    "first": "2009-07-02",
+    "last": "2009-11-18",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=01.07.2009&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:11.697467+00:00",
+    "raw_file": "through_2009-07-01.csv",
+    "sha256": "d3eb23eb8590d3abc03d51563575819f252ac35e05c776666b7cfad8515d2d10",
+    "first": "2009-02-06",
+    "last": "2009-07-01",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=05.02.2009&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:12.520081+00:00",
+    "raw_file": "through_2009-02-05.csv",
+    "sha256": "fdf313475aa16517f601942c9b52f3c70eae564a4c530597a2e60194736f24b7",
+    "first": "2008-09-12",
+    "last": "2009-02-05",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=11.09.2008&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:13.330142+00:00",
+    "raw_file": "through_2008-09-11.csv",
+    "sha256": "f7605670dd91d4cf98ef36757be9260360c31dd67dea4e74360bf8202f208dcc",
+    "first": "2008-04-24",
+    "last": "2008-09-11",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=23.04.2008&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:14.149938+00:00",
+    "raw_file": "through_2008-04-23.csv",
+    "sha256": "8c6fe6b401504d6320fc50962c0d7d555d4a5684354747c519f4fc4cfd380819",
+    "first": "2007-11-27",
+    "last": "2008-04-23",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=26.11.2007&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:14.960099+00:00",
+    "raw_file": "through_2007-11-26.csv",
+    "sha256": "49da0c2e7337645a9570a05da7a6da938e2801dfb1e211da002bcedfaaab4f61",
+    "first": "2007-07-10",
+    "last": "2007-11-26",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=09.07.2007&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:15.782591+00:00",
+    "raw_file": "through_2007-07-09.csv",
+    "sha256": "a55b25e121ed5542bb5c1b75d3fb082e6b0ecb8c22c2fddce1c1709d30f8f897",
+    "first": "2007-02-14",
+    "last": "2007-07-09",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=13.02.2007&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:16.593693+00:00",
+    "raw_file": "through_2007-02-13.csv",
+    "sha256": "ef306b8dc356a744ab6b9d11ebdfd402f48dcdad922da729c7dd43cc8c293b33",
+    "first": "2006-09-22",
+    "last": "2007-02-13",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=21.09.2006&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:17.470264+00:00",
+    "raw_file": "through_2006-09-21.csv",
+    "sha256": "b571acf61931f54f964b55b2bf298f308ecf1aaa6b65a2741df936c79b54797a",
+    "first": "2006-05-05",
+    "last": "2006-09-21",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=04.05.2006&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:18.282284+00:00",
+    "raw_file": "through_2006-05-04.csv",
+    "sha256": "6d2eafd606ca36c689298f8b89b954395f95553349fd0cc7d0378fcddfe672d0",
+    "first": "2005-12-12",
+    "last": "2006-05-04",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=11.12.2005&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:19.093449+00:00",
+    "raw_file": "through_2005-12-11.csv",
+    "sha256": "97d0c99ceda69e1fb6419f72d7991e6ea1979d96699012b13bdcc78a6949b93f",
+    "first": "2005-07-25",
+    "last": "2005-12-09",
+    "rows": 100
+  },
+  {
+    "url": "https://www.comdirect.de/inf/kursdaten/historic.csv?DATETIME_TZ_START_RANGE_FORMATED=01.01.1999&DATETIME_TZ_END_RANGE_FORMATED=24.07.2005&ID_NOTATION=12105800&INTERVALL=16&WITH_EARNINGS=false&OFFSET=0&delimiter=semicolon",
+    "downloaded_utc": "2026-11-11T05:56:19.888170+00:00",
+    "raw_file": "through_2005-07-24.csv",
+    "sha256": "f2c92699a18189ef2230cbc86f78e047a130f241f4895a81a3878c3066e3e026",
+    "first": "2005-05-26",
+    "last": "2005-07-22",
+    "rows": 42
+  }
+]

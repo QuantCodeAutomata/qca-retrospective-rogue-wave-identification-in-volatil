@@ -2,7 +2,9 @@
 
 The algorithm requires actual daily High in index points. Close-only history is not a substitute. The public evidence contains derived warning and event ledgers, effective configurations, hashes and validation receipts. Raw vendor exports, normalized daily price inputs and full offline replay bundles are kept separately. A reader needs the corresponding input snapshot for an exact numerical replay; the public evidence alone cannot reconstruct it.
 
-## Sources used
+The 11 November chart refresh uses CBOE VIX through 10 November 2026, the final CBOE VXO quotation on 23 September 2021, and a comdirect/Eurex VSTOXX series covering May 2005 through 10 November 2026. [Source checks](judge_20261111/evidence.json) · [Input reconstruction](judge_20261111/REPLAY.md).
+
+## Sources in the frozen comparisons
 
 | Input | Source | Frozen use |
 |---|---|---|
@@ -30,7 +32,7 @@ The judge-review follow-up rebuilt the VIX/VXO normalized inputs and all six VST
 
 ## Data limits
 
-The latest VIX download has 9,312 observations. Its 9,299 overlapping High values agree with the earlier download within 1e−10. The raw OHLC has 47 inconsistent rows in older history; none is in 2025–2026. High values were not silently repaired.
+The 10 November VIX download has 9,312 observations. Its 9,299 overlapping High values agree with the earlier download within 1e−10. The raw OHLC has 47 inconsistent rows in older history; none is in 2025–2026. High values were not silently repaired.
 
 VSTOXX exports have source and calendar limitations. The comparison Close series lacks records on six dates present in the Investing export. A sensitivity run removes those six dates, but their absence from a different file does not establish that no index session occurred. The same comparison has six observations missing from the Investing export in March 2025. We neither fill missing High values nor replace them with Close.
 

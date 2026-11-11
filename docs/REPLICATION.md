@@ -2,6 +2,8 @@
 
 We implemented and checked the calculations described in Hayward, Lennon and Biancalana, *Real-time identification of the onset of financial rogue waves*, arXiv:2606.31475v4 (15 October 2026). The result is a partial numerical replication. Several choices that affect the results are missing from the paper, and we do not have the authors' input snapshots.
 
+This report records the frozen comparisons. The 11 November assessment includes the independent judge’s v2 findings, the longer VSTOXX series, and refreshed figures for all three indices. [Updated assessment](judge_20261111/final_analysis_report.md).
+
 ## Method and evaluation
 
 The input is daily High of a volatility index, in index points. The method mirrors the observed series, filters its Fourier spectrum, and takes the Hilbert envelope. The negative squared envelope becomes the potential of a discrete Schrödinger operator. Changes in its lowest eigenvalue produce the warning indicator, W = M × C. M is the largest signed gradient in a block of ten windows; C counts gradients above 50. Each window contains 80 observations. Warning thresholds are 300 for VIX/VSTOXX and 700 for VXO.
